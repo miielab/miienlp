@@ -1,0 +1,15 @@
+biologist
+chemist
+doctor
+doctors
+Dr
+engineer
+nurse
+paramedic
+pathologist
+pharmacist
+physician
+physicist
+programmer
+scientist
+surgeon
