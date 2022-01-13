@@ -6,11 +6,6 @@ _curdir = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_PARAMS_FILE = os.path.join(_curdir, 'input.yaml')
 
 DEFAULT_YAML = {
-'ner':
-  {'spacy_dataset': 'en_core_web_sm',
-  'filter_entities': [],
-  'output_dir': ''
-  },
 'specific_words': 
   {'categorize_file': None,
     'spacy_dataset': 'en_core_web_sm',
