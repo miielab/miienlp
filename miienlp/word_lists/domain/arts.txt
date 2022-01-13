@@ -1,0 +1,10 @@
+architect
+art
+arts
+dance
+drama
+literature
+novel
+poetry
+sculpture
+symphony
