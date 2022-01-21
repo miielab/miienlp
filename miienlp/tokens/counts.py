@@ -2,14 +2,15 @@ import nltk, spacy
 from nltk.corpus import wordnet
 from miienlp.tokens import utils
 import pandas as pd
+from miienlp.corpus.corpus_reader import *
 
 class Counts(object):
-    def __init__(self, data, supp_data_path, subcats, method, spacy_dataset="en_core_web_sm", _type="LU"):
+    def __init__(self, data, method='spacy', subcats=[], spacy_dataset="en_core_web_sm", _type="LU"):
         self.data = data
         self.spacy_dataset = spacy_dataset
         self.method = method
-        self.categories = utils.read_vocab_files(supp_data_path, subcats, _type)
-        # TO DO: add method that does specific word counts without using packages
+        #self.categories = utils.read_vocab_files(supp_data_path, subcats, _type)
+        self.categories = CorpusReader().read_corpus(subcats, _type)
 
     def generate_spacy_data(self):
         '''
