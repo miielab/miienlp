@@ -1,0 +1,13 @@
+---
+# Co-Occurrence inputs
+#text: /project2/adukia/miie/text_analysis/combined_data/diversity/full_dataset/full_diversity_corpus.txt
+text: /home/adas7/Co-occurrence/test_suite/text.txt
+#text: /project2/adukia/miie/text_analysis/combined_data/diversity/by_decade
+domains: /project2/adukia/miie/text_analysis/supplemental_data/Categories/domain
+groups: /project2/adukia/miie/text_analysis/supplemental_data/Categories/group
+subcats: ["male_words", "female_words", "family", "appearance", "business"]
+output: /home/adas7/Co-occurrence/src/outputs/test.csv
+method: context # sentence or context
+window: 3 # if context window is being used
+scaled: False #group, domain, False
+...
