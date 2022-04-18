@@ -1,0 +1,15 @@
+---
+# OCR inputs
+raw_data_directory: /project2/adukia/miie/compressed_scans/addams
+ # REQUIRED: path to directory containing scans, or directory of directories containing scans
+#raw_data_directory: /home/adas7/OCR/test_suite/test_data/bloomer
+output_directory: /project2/adukia/miie/text_analysis/data_new/gv_raw/addams # path to desired output, default is /path/to/raw/../ocr_output
+ocr_method: Google Vision # Google Vision or Tesseract (Tesseract not yet working)
+confidence_threshold: 0.2 # Value between 0 and 1, inclusive
+image_ordering: underscore_numerical # order: page_1.jpg, page_2.jpg, page_3.jpg
+#language: [] # list of languages in text. eg: ["English", "Spanish"]
+project_id:  # google vision project id
+model_id: # google vision single label model id
+remove_cover_ends: True
+preprocess_images: False
+...
