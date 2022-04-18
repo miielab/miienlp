@@ -1,0 +1,17 @@
+# WEAT inputs
+run_analysis: ""
+run_cleaning: "t"
+
+# Analysis
+model_directory: "/project2/adukia/miie/text_analysis/models/simulation/gender_embeddings/decade/diversity/2010"
+output_directory : "/project2/adukia/miie/text_analysis/code/WEAT"
+output_file : "/project2/adukia/miie/text_analysis/results/weat/jan2022_children_jones_decade_div.json"
+test_directory: "/project2/adukia/miie/text_analysis/code/WEAT/tests/jones"
+vocabulary_suffix: ""
+embeddings_suffix: ""
+reuse_fetchvec: ""
+
+# Cleaning
+clean_csv: "clean.csv"
+clean_out: "/project2/adukia/miie/text_analysis/results/weat/jan2022_children_weat_data_decade.csv"
+...
