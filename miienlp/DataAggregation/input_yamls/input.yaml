@@ -1,3 +1,0 @@
-metadata_file: /home/adas7/DataAggregation/test_suite/metadata.csv
-groups: [[collection, decade], [collection], [decade]]
-output_dir: /home/adas7/DataAggregation/src/combined/
