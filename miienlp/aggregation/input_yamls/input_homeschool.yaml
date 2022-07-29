@@ -1,0 +1,3 @@
+metadata_file: /project2/adukia/miie/supplemental_data/metadata/homeschool_meta_clean_unique_books.csv
+groups: [[collection], [collection, grade], [collection, subject]]
+output_dir: /project2/adukia/miie/text_analysis/data/combined_textbooks/homeschool/
