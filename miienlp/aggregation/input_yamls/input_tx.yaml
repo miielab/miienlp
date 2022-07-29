@@ -1,0 +1,3 @@
+metadata_file: /project2/adukia/miie/visualizations/homeschool/supplemental/tx_aggregation.csv
+groups: [[corpus]]
+output_dir: /project2/adukia/miie/text_analysis/data/combined_textbooks/tx/
