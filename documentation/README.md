@@ -1,2 +1,2 @@
-# Docummentation
-MiiENLP Documentation for users and another documentation for the MiiENLP developers
+# Documentation
+MiiENLP documentation for users and documentation for the MiiENLP developers.

@@ -1,6 +1,6 @@
 import pytest, sys
 import pandas as pd
-sys.path.insert(0, '../src/')
+sys.path.insert(0, '../../miienlp/aggregation')
 from aggregation import Aggregation
 
 class TestAggregation(object):
