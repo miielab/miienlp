@@ -1,7 +1,0 @@
-path,collection,decade
-/home/adas7/DataAggregation/test_suite/test_data/gv_clean_counts/mainstream/1920/testing2m.txt,mainstream,1920
-/home/adas7/DataAggregation/test_suite/test_data/gv_clean_counts/mainstream/1950/testing5m.txt,mainstream,1950
-/home/adas7/DataAggregation/test_suite/test_data/gv_clean_counts/diversity/1920/testing2d.txt,diversity,1920
-/home/adas7/DataAggregation/test_suite/test_data/gv_clean_counts/diversity/1960/testing6d.txt,diversity,1960
-/home/adas7/DataAggregation/test_suite/test_data/gv_clean_counts/mainstream/1960/testing6m.txt,mainstream,1960
-/home/adas7/DataAggregation/test_suite/test_data/gv_clean_counts/mainstream/1960/testing6m2.txt,mainstream,1960
