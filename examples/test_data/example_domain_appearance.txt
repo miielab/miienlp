@@ -1,1 +1,10 @@
-
+attractive
+beautiful
+fashionable
+fat
+glamorous
+handsome
+pretty
+skinny
+ugly
+unattractive
