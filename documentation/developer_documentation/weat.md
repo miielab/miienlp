@@ -15,7 +15,7 @@ To run visualizations, you can run [`line_graphs_viz.R`](https://github.com/miie
 
 ### `Fetchvec`
 
-Fetchvec looks at your input embeddings and extracts only the embeddings that will be needed to run the tests. These extracted embeddings are stored in a TEMP file (the location of the TEMP file is determined by the `out_dir` you specify in the YAML file - see the YAML file input descriptions for more details).
+Fetchvec looks at the input embeddings and extracts only the embeddings that will be needed to run the tests. These extracted embeddings are stored in a TEMP file (the location of the TEMP file is determined by the `out_dir` specified in the YAML file - see the [YAML file input descriptions](https://github.com/miielab/miienlp/blob/main/documentation/developer_documentation/autoYAML.md) for more details).
 
 ### `Wordtest`
 
