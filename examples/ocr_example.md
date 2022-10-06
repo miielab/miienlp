@@ -10,9 +10,9 @@ raw_data_directory: test_data/test_scans
 ...
 ```
 
-** For more details, refer to the [Custom and Default Options](https://github.com/patriChiril/miie_beta/blob/main/documentation/developer_documentation/ocr.md). **
 
-## Example input.yaml file with all features
+
+## Example input.yaml file with all the features
 ```
 ---
 raw_data_directory: test_data/test_scans # the path to the raw data directory is the only required input
@@ -29,6 +29,8 @@ remove_cover_ends: True
 preprocess_images: True
 ...
 ```
+
+**For more details, refer to the [Custom and Default Options](https://github.com/patriChiril/miie_beta/blob/main/documentation/developer_documentation/ocr.md).**
 
 ## How to Run
 
