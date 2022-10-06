@@ -28,7 +28,13 @@ preprocess_images: True
 ...
 ```
 
+## How to Run
 
+1. Edit and replace the [`input.yaml`](https://github.com/miielab/miienlp/tree/main/miienlp/ocr/input_yamls) file.
+2. Run the pipeline:
+  ```
+  $ python src/main.py
+  ```
 
 
 
