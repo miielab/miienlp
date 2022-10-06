@@ -52,10 +52,13 @@
 ## How to Run WEAT visualizations
 
 Midway modules:
+
 	```
 	1. module load R
 	```
+
 Run:
+
 	```
 	Rscript line_graphs_viz.R
 	Rscript bar_graphs_viz.R
