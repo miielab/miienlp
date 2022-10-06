@@ -28,32 +28,32 @@
 
 To run the code directly:
 
-	1. "python main.py"
+		"python main.py"
 
 To run the code on a slurm system:
 	
-	1. sbatch runbrwl.batch
+		sbatch runbrwl.batch
 
 If you are on Midway:
 
-	1. module load Anaconda3/5.3.0
-	2. conda create -n weat
-	3. source activate weat
+		1. module load Anaconda3/5.3.0
+		2. conda create -n weat
+		3. source activate weat
 	
 If you are on your own computer:
 
-	1. conda create -n weat
-	2. conda activate weat
+		1. conda create -n weat
+		2. conda activate weat
 	
 Then:
 
-	1. conda install numpy
-	2. conda install sklearn
-	3. conda install scipy
-	4. conda install statsmodels
-	5. conda install pyyaml
-	6. conda install gensim
-	7. python main.py
+		1. conda install numpy
+		2. conda install sklearn
+		3. conda install scipy
+		4. conda install statsmodels
+		5. conda install pyyaml
+		6. conda install gensim
+		7. python main.py
 
 **After finalizing the WEAT analysis, delete the TEMP folder that was generated.**
 
