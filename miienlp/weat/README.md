@@ -4,5 +4,5 @@ The purpose of this program is to calculate scores such as association and cente
 
 After running those tests, this program can also clean and visualize the output of those tests.
 
-**IMPORTANT:** For more details, see the [example](https://github.com/patriChiril/miie_beta/blob/main/examples/weat/weat.md) and [How to Run](https://github.com/patriChiril/miie_beta/blob/main/documentation/user_documentation/weat.md) sections.
+**IMPORTANT:** For more details, see the [example](https://github.com/miielab/miienlp/blob/main/examples/weat_example.md) and [How to Run](https://github.com/miielab/miienlp/blob/main/documentation/user_documentation/weat.md) sections.
 
