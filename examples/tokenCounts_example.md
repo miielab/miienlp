@@ -3,7 +3,7 @@
 
 
 ## Example (NER Only)
-1. To run *just* NER, create an `input.yaml` file in the `src/` and copy the following. Make the necessary edits.
+
 ```
 ---
 data_dir: ENTER_YOUR_DATA_DIR_PATH
@@ -16,11 +16,17 @@ ner:
 ...
 
 ```
-2. Run the NER pipeline with your customizations:
-    - `python src/main.py -i /path/to/input/yaml`
+
+### How to Run
+
+1. Edit and replace the `input.yaml` file in the [Token Counts folder](https://github.com/miielab/miienlp/tree/main/miienlp/token).
+2. Run the customized NER pipeline:
+    ```
+    $ python src/main.py -i /path/to/input/yaml
+    ```
 
 ## Example (Specific Word Counts Only)
-1. To run *just* specific word counts, create an `input.yaml` file in the `src/` and copy the following. Make the necessary edits.
+
 ```
 ---
 data_dir: ENTER_YOUR_DATA_DIR_PATH
@@ -33,14 +39,18 @@ specific_words:
   output_dir: ENTER_YOUR_OUTPUT_DIR_PATH #where you would like your results stored
 ...
 ```
-Note: the [Categories](https://github.com/miielab/Categories) GitHub repository contains all potential specific words we are interested in for our analysis in particular. You may create your own categories that are interesting to you, or go off of the categories we already created. 
+Note: the [Categories](https://github.com/miielab/Categories) GitHub repository contains all potential specific words we are interested in for our analysis in particular. One may create new categories, or rely on the already existing categories. 
 
-2. Run the specific words pipeline with your customizations:
-    - `python src/main.py -i /path/to/input/yaml`
+### How to Run
+
+1. Edit and replace the `input.yaml` file in the [Token Counts folder](https://github.com/miielab/miienlp/tree/main/miienlp/token).
+2. Run the customized NER pipeline:
+    ```
+    $ python src/main.py -i /path/to/input/yaml
+    ```
 
 
 ## Example (Both NER + Specific Word Counts)
-1. To run both specific words and NER in one go, simply combine the fields in the specific word count section with the fields in the NER section into one large input.yaml file and then run `python src/main.py -i /path/to/input/yaml`
 
 ```
 ---
@@ -60,3 +70,7 @@ specific_words:
   output_dir: /path/to/output_dir/
 ...
 ````
+
+### How to Run
+
+1. To run both specific words and NER in one go, simply combine the fields in the specific word count section with the fields in the NER section into one large `input.yaml` file and then run `python src/main.py -i /path/to/input/yaml`
