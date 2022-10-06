@@ -61,13 +61,13 @@ Then:
 
 Midway modules:
 
-	1. module load R
+	module load R
 
 Run:
-
+	```
 	Rscript line_graphs_viz.R
 	Rscript bar_graphs_viz.R
-		
+	```	
 
 ## Dependencies
 - [numpy](https://numpy.org/)
