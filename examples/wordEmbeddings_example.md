@@ -7,7 +7,7 @@ Below is an example of an input.yaml file that takes advantage of all possible c
 
 ```
 ---
-# word embedding inputs
+# word embeddings inputs
 data_dir: [test_data/example_book_excerpt.txt]
 
 model:
