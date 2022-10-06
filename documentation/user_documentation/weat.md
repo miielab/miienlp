@@ -50,12 +50,16 @@
 	* After finishing WEAT analysis, delete the TEMP folder that was generated. *
 
 ## How to Run WEAT visualizations
-	Midway modules:
-		1. module load R
 
-	Run:
-		Rscript line_graphs_viz.R
-		Rscript bar_graphs_viz.R
+Midway modules:
+	```
+	1. module load R
+	```
+Run:
+	```
+	Rscript line_graphs_viz.R
+	Rscript bar_graphs_viz.R
+	```
 		
 
 ## Dependencies
