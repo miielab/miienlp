@@ -19,6 +19,9 @@ where *'test'* should contain one or two lists for T1 or T2 respectively and *'g
 
 `4. input.yaml` 
 
+## What is required to run WEAT cleaning?
+`CSV input file` (See the [example](https://github.com/miielab/miienlp/blob/main/examples/weat_example.md)).
+
 
 ## How to run WEAT analysis and/or cleaning:
 
