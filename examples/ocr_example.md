@@ -1,5 +1,15 @@
 # Optical Character Recognition (OCR)
 
+**The data directory containing images of text is the only required input (cf. [test_scans](https://github.com/miielab/miienlp/tree/main/examples/test_data/test_scans)).  See [Custom and Default Options](https://github.com/patriChiril/miie_beta/blob/main/documentation/developer_documentation/ocr.md) section for more details.**
+
+## Example of a default input.yaml file
+
+```
+---
+raw_data_directory: /path/to/raw_data_dir # only required input
+...
+```
+
 ## Example input.yaml file with all features
 ```
 ---
@@ -18,7 +28,7 @@ preprocess_images: True
 ...
 ```
 
-**The data directory containing images of text is the only required input.  See [Custom and Default Options](https://github.com/patriChiril/miie_beta/blob/main/documentation/developer_documentation/ocr.md) section for more details.**
+
 
 
 
