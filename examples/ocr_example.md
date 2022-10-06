@@ -3,10 +3,10 @@
 ## Example input.yaml file with all features
 ```
 ---
-raw_data_directory: /path/to/raw_data_directory # only required input
+raw_data_directory: test_data/test_scans # the path to the raw data directory is the only required input
 combination_type: both 
-output_combined: /path/to/output_combined_directory
-output_uncombined: /path/to/output_uncombined_directory/
+output_combined: test_data/test_scans/output_combined_directory
+output_uncombined: test_data/test_scans/output_uncombined_directory/
 ocr_method: Google Vision
 confidence_threshold: 0.5
 image_ordering: underscore_numerical
