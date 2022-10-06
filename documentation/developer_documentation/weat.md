@@ -15,17 +15,17 @@ To run visualizations, you can run [`line_graphs_viz.R`](https://github.com/miie
 
 ### `Fetchvec`
 
-`Fetchvec` looks at your input embeddings and extracts only the embeddings that will be needed to run the tests. These extracted embeddings are stored in a TEMP file (the location of the TEMP file is determined by the `out_dir` you specify in the YAML file - see the YAML file input descriptions for more details).
+Fetchvec looks at your input embeddings and extracts only the embeddings that will be needed to run the tests. These extracted embeddings are stored in a TEMP file (the location of the TEMP file is determined by the `out_dir` you specify in the YAML file - see the YAML file input descriptions for more details).
 
 ### `Wordtest`
 
-`Wordtest` runs the actual calculations on the embeddings. The test we are currently using is called the T1 test, which measures male-domain and female-domain associations. For example, if the domain is *'science'*, we will get:
-* (1) the association (i.e., cosine similarity) between the word embeddings for male words and the word embeddings for science words; 
-* (2) the association between the word embeddings for female words and the word embeddings for science words; 
-* (3) the gender centerdness, which is female-science association minus male-science association; 
-* (4) the absolute value of the centeredness;  
-* (5) the effective word percentage, which tells one how many of the words that were tested are actually in the data, and 
-* (6) statistics, like t-statistic, p-value, n1 (total # of pairwise cosine similarities calculated between group 1 and the domain), and n2 (total # of pairwise cosine similarities calculated between group 2 and the domain).
+Wordtest runs the actual calculations on the embeddings. The test we are currently using is called the T1 test, which measures male-domain and female-domain associations. For example, if the domain is *'science'*, we will get:
+* the association (i.e., cosine similarity) between the word embeddings for male words and the word embeddings for science words; 
+* the association between the word embeddings for female words and the word embeddings for science words; 
+* the gender centerdness, which is female-science association minus male-science association; 
+* the absolute value of the centeredness;  
+* the effective word percentage, which tells one how many of the words that were tested are actually in the data;
+* statistics, like t-statistic, p-value, n1 (total # of pairwise cosine similarities calculated between group 1 and the domain), and n2 (total # of pairwise cosine similarities calculated between group 2 and the domain).
 
 ### `Utils`
 
