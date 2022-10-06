@@ -27,3 +27,8 @@ This CSV file is used as input for WEAT cleaning. It contains 3 columns: categor
 * File specifies the JSON file output by WEAT analysis that you want to include in the cleaned output. 
 * Category specifies the category that the JSON file is in (e.g., if the JSON file was an *'apparel'* test, the category could be *'appearance'*. 
 * Corpus specifies the corpus that was tested in the JSON file (either *'children'* or *'histwords'*).
+
+## How to Run
+
+1. Edit and replace the `input.yaml` file in the [weat folder](https://github.com/miielab/miienlp/tree/main/miienlp/weat).
+2. [Run the pipeline](https://github.com/miielab/miienlp/blob/main/documentation/user_documentation/weat.md).
