@@ -25,20 +25,28 @@
 	See input.yaml to specify the inputs for the WEAT analysis. See input.yaml and clean.csv to specify the inputs for WEAT cleaning.
 
 ## How to run WEAT analysis and/or cleaning:
-	To run the code directly:
+
+To run the code directly:
+
 	1. "python main.py"
 
-	To run the code on a slurm system:
+To run the code on a slurm system:
+	
 	1. sbatch runbrwl.batch
 
-	If you are on Midway:
-		1. module load Anaconda3/5.3.0
-		2. conda create -n weat
-		3. source activate weat
-	If you are on your own computer:
-		1. conda create -n weat
-		2. conda activate weat
-	Then:
+If you are on Midway:
+
+	1. module load Anaconda3/5.3.0
+	2. conda create -n weat
+	3. source activate weat
+	
+If you are on your own computer:
+
+	1. conda create -n weat
+	2. conda activate weat
+	
+Then:
+
 	1. conda install numpy
 	2. conda install sklearn
 	3. conda install scipy
@@ -47,22 +55,18 @@
 	6. conda install gensim
 	7. python main.py
 
-	* After finishing WEAT analysis, delete the TEMP folder that was generated. *
+**After finalizing the WEAT analysis, delete the TEMP folder that was generated.**
 
 ## How to Run WEAT visualizations
 
 Midway modules:
 
-	```
 	1. module load R
-	```
 
 Run:
 
-	```
 	Rscript line_graphs_viz.R
 	Rscript bar_graphs_viz.R
-	```
 		
 
 ## Dependencies
