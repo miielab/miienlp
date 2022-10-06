@@ -23,4 +23,4 @@ data_dir: [/home/Desktop/testing_data]
   ```
   $ python src/main.py -i /path/to/input/yaml
   ```
-**IMPORTANT:** To customize your word vector pipeline (see the [custom parameters](https://github.com/patriChiril/miie_beta/blob/main/documentation/developer_documentation/wordEmbeddings.md) section for options), edit and save the `src/input.yaml` file, and then rerun step #5. 
+**IMPORTANT:** To customize your word vector pipeline (see the [custom parameters](https://github.com/miielab/miienlp/blob/main/documentation/developer_documentation/wordEmbeddings.md) section for options), edit and save the `src/input.yaml` file, and then rerun step #5. 
