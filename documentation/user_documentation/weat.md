@@ -63,4 +63,4 @@
 - [sklearn](https://scikit-learn.org/)
 - [scipy](https://www.scipy.org)
 
-**IMPORTANT:** For more details regarding the modules, see the [details](https://github.com/patriChiril/miie_beta/blob/main/documentation/developer_documentation/weat.md) section.
+**IMPORTANT:** For more details regarding the modules, see the [details](https://github.com/miielab/miienlp/blob/main/documentation/developer_documentation/weat.md) section.
