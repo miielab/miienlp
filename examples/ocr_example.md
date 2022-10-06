@@ -10,7 +10,7 @@ raw_data_directory: test_data/test_scans
 ...
 ```
 
-**The user can specify additional parameters, such as `output_combined` (filepath for the OCR'd files) or `ocr_method` (Tesseract or Google Vision). For more details, refer to the [Custom and Default Options](https://github.com/miielab/miienlp/blob/main/documentation/developer_documentation/ocr.md).**
+The user can specify additional parameters, such as `output_combined` (*filepath for the OCR'd files*) or `ocr_method` (*Tesseract or Google Vision*). For more details, refer to the [Custom and Default Options](https://github.com/miielab/miienlp/blob/main/documentation/developer_documentation/ocr.md).
 
 
 ## Example input.yaml file with all the features
@@ -34,7 +34,7 @@ preprocess_images: True
 
 ## How to Run
 
-1. Edit and replace the [`input.yaml`](https://github.com/miielab/miienlp/tree/main/miienlp/ocr/input_yamls) file.
+1. Edit and replace the `input.yaml` file in the [OCR folder](https://github.com/miielab/miienlp/tree/main/miienlp/ocr/input_yamls).
 2. Run the pipeline:
     ```
     $ python src/main.py
