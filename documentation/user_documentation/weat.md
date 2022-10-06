@@ -64,10 +64,10 @@ Midway modules:
 	module load R
 
 Run:
-	```
-	Rscript line_graphs_viz.R
-	Rscript bar_graphs_viz.R
-	```	
+  ```
+  Rscript line_graphs_viz.R
+  Rscript bar_graphs_viz.R
+  ```	
 
 ## Dependencies
 - [numpy](https://numpy.org/)
