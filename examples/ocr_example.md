@@ -6,7 +6,7 @@
 
 ```
 ---
-raw_data_directory: /path/to/raw_data_dir # only required input
+raw_data_directory: test_data/test_scans 
 ...
 ```
 
