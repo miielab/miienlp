@@ -2,10 +2,10 @@
 ## WEAT metrics
 The metrics specific to the WEAT tests are defined as follows:
 
-* Association: mean of all the pairwise cosine similarities between word embeddings from two sets of words. Sometimes referred to as the association/the cosine similarity between two sets of words.
-* Female or Male Association: if the domain is stated as X, then the female or male association is the association between female or male words and words of the X domain.
-* Gender Centeredness: female-domain association minus male-domain association. Might also be referred to as gender bias.
-* EWP: Percentage of WEAT test words that had a valid word embedding vector.
+* **Association**: mean of all the pairwise cosine similarities between word embeddings from two sets of words. Sometimes referred to as the association/the cosine similarity between two sets of words.
+* **Female** or **Male Association**: if the domain is stated as X, then the female or male association is the association between female or male words and words of the X domain.
+* **Gender Centeredness**: female-domain association minus male-domain association. Might also be referred to as *gender bias*.
+* **EWP**: Percentage of WEAT test words that had a valid word embedding vector.
 
 ## WEAT modules
 
