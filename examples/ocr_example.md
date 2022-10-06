@@ -36,9 +36,9 @@ preprocess_images: True
 
 1. Edit and replace the [`input.yaml`](https://github.com/miielab/miienlp/tree/main/miienlp/ocr/input_yamls) file.
 2. Run the pipeline:
-  ```
-  $ python src/main.py
-  ```
+    ```
+    $ python src/main.py
+    ```
 
 
 
