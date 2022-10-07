@@ -1,7 +1,6 @@
 import pytest, sys
 sys.path.insert(0, '../../miienlp/embeddings')
 from word_vecs import WordVectors
-from data_prep import WVecDataPreparation
 
 time_series =\
 {"type": "decade",
@@ -33,8 +32,4 @@ data_dir= "test_data/"
 
 class TestWordEmbedding(object):
     def test_combine_text(self):
-        dp = WVecDataPreparation(data_dir, time_series, collection_corpora)
-        time_frame = dp.construct_time_series()
-        df = dp.construct_relevant_file_path_df(time_frame)
-        comb_path = dp.combine_text(df)
-        assert df.head() == ["time_series"]
+        pass
