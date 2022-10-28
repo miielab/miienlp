@@ -1,0 +1,5 @@
+__pycache__/
+.DS_Store
+src/google_auth_key
+src/__pycache__/
+src/.DS_Store

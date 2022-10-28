@@ -105,10 +105,12 @@ class OCR(object):
         utils.remove_temp(self.output_dir+"/preprocess") # remove preprocessed folder
         if len(os.listdir(self.output_dir)) == 0:
             utils.remove_temp(self.output_dir) # output is a text file, not a directory 
+        print("####################################")
         print("Number of already existing OCRs: " + str(self.existing))
         print("Number of attempted OCRs: " + str(self.attempted))
         print("Number of successful OCRs: " + str(self.successful))
         end = time.time()
         print("Run Time (sec):  " + str(end-start))
+        print("####################################")
 
 
