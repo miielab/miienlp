@@ -32,5 +32,4 @@ class TestOCR:
         output = utils.validate_create_output_dir("", input_dir)
         utils.remove_temp(output)
         print(output)
-        #assert "/ocr_output" in output
         assert "/ocr_uncombined" in output
