@@ -1,6 +1,6 @@
 import pytest
 import sys, os
-sys.path.insert(0, '../../miienlp/ocr/')
+sys.path.insert(0, '../../miienlp/ocr/src/')
 from ocr import OCR
 from scan_GV import ScanGV
 from main_text_classification import MainTextClassification
