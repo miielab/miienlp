@@ -17,12 +17,12 @@ model =\
   }
 
 output =\
-{"output_model_dir": "../../examples/test_results/",
+{"output_model_dir": "../../examples/test_data/",
  "save_vocab_np": True,
  "save_vocab_txt": True
 }
 
-data_dir= "../../examples/example_book_excerpt.txt"
+data_dir= "../../examples/test_data/example_book_excerpt.txt"
 
 class TestWordEmbedding(object):
   '''  
