@@ -37,41 +37,40 @@ class TestCounts(object):
         df = ner.construct_df(entities)
         filtered_df = ner.filter_results(df)
         assert filtered_df[filtered_df['entity'] == 'april']['freq'].values[0] == 2 and filtered_df[filtered_df['entity'] == 'april']['modal_tag'].values[0] == 'PERSON'
-    '''
     def test_specific_words1(self):
         # tests categories are extracted correctly and obey the "type" parameter (upper/lower or upper or lower)
-        swc = SpecificWordCounts("", "/project2/adukia/miie/text_analysis/supplemental_data/Categories/", ['black_words'], "spacy", _type='LU')
+        swc = SpecificWordCounts("", "../../miienlp/word_lists/domain/", ['black_words'], "spacy", _type='LU')
         assert sorted(swc.categories['black_words']) == sorted(["black", "blacks", "Black", "Blacks"])
     
     def test_specific_words2(self):
         # tests specical case of pronouns (i.e. ignore type LU and just do lower or upper)
-        swc = SpecificWordCounts("", "/project2/adukia/miie/text_analysis/supplemental_data/Categories/", ['male_pronouns_lower'], "spacy", _type='LU')
+        swc = SpecificWordCounts("", "../../miienlp/word_lists/group/", ['male_pronouns_lower'], "spacy", _type='LU')
         assert sorted(swc.categories['male_pronouns_lower']) == sorted(["he", "him", "himself", "his", "hisself"])
     
     def test_specific_words3(self):
         # tests specical case of pronouns (i.e. ignore type LU and just do lower or upper)
-        swc = SpecificWordCounts("", "/project2/adukia/miie/text_analysis/supplemental_data/Categories/", ['female_pronouns_upper'], "nltk", _type='LU')
+        swc = SpecificWordCounts("", "../../miienlp/word_lists/group/", ['female_pronouns_upper'], "nltk", _type='LU')
         assert sorted(swc.categories['female_pronouns_upper']) == sorted(["She", "Her", "Herself", "Hers"])
-
+    '''
     def test_specific_words4(self):
         # tests specific word frequency using spacy
         data = "Michelle was a girl. Her mother was a woman who loved her hair. Tom was a boy who loved his Grandfather and dog."
-        swc = SpecificWordCounts(data, "/project2/adukia/miie/text_analysis/supplemental_data/Categories/", ['female_words', 'male_words', 'appearance', 'animal'], "spacy", _type='LU')
+        swc = SpecificWordCounts(data, "../../miienlp/word_lists/domain/", ['female', 'male', 'appearance', 'animal'], "spacy", _type='LU')
         spacy_txt = swc.generate_spacy_data()
         counts = swc.count_freq_spacy(spacy_txt)
         assert counts == {'female_words': 5, 'male_words': 3, 'appearance': 1, 'animal': 1}
-
+    '''
     def test_specific_words5(self):
         # tests specific word frequency using nltk
         data = "She was a black woman with blacks and blacks and White"
-        swc = SpecificWordCounts(data, "/project2/adukia/miie/text_analysis/supplemental_data/Categories/", ['black_words', 'white_words'], method="nltk", _type='LU')
+        swc = SpecificWordCounts(data, "../../miienlp/word_lists/domain/", ['black_words', 'white_words'], method="nltk", _type='LU')
         counts = swc.count_freq_nltk()
         assert counts == {'black_words': 3, "white_words":1}
 
     def test_specific_words6(self):
         # tests nltk proportion counter
         data = "She was a black woman with blacks and blacks and White"
-        swc = SpecificWordCounts(data, "/project2/adukia/miie/text_analysis/supplemental_data/Categories/", ['black_words', 'white_words'], method="nltk", _type='L')
+        swc = SpecificWordCounts(data, "../../miienlp/word_lists/domain/", ['black_words', 'white_words'], method="nltk", _type='L')
         counts, spec_counts = swc.count_prop_nltk()
         assert spec_counts == {'black_words':{'black': 1, 'blacks':2}, 'white_words':{'white': 1, 'whites': 0}}
-    '''
+    
