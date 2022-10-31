@@ -37,5 +37,5 @@ class TestWordEmbedding(object):
         # tests output filename creation
         word_vect = WordVectors(data_dir, model, output, '')
         w2v_file = word_vect.make_w2v_model()
-        assert output_file == "../../examples/test_results/model_0.bin"
+        assert output_file == "../../examples/test_data/model_0.bin"
         
