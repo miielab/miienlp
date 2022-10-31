@@ -14,7 +14,7 @@ class TestOCR:
         text = "This page is a cover page. It contains an ISBN number"
         GV = ScanGV("", "", 0.5, [], "", "")#, False)
         assert GV.keywords_decision(text) == 1
-    '''
+    
     def test_default_combined_self(self):
         input_dir = "test_data/bloomer"
         input_dir = utils.validate_data_dir(input_dir)
@@ -31,4 +31,4 @@ class TestOCR:
         utils.remove_temp(output)
         print(output)
         assert "../../miienlp/ocr/ocr_uncombined" in output
-    '''
+    
