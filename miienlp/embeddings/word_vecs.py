@@ -26,33 +26,57 @@ class WordVectors(object):
 
         
         #out_file = self.combined_data_path.split('/')[-1][:-4] + '.bin'
+        print("input path", self.combined_data_path)
         out_file = "model_" + str(self.model_id) + '.bin'
+        print("output path", self.output["output_model_dir"] + out_file)
         utils.construct_output_dir(self.output["output_model_dir"])
         gen_model.wv.save_word2vec_format(self.output["output_model_dir"] + out_file, binary=True)
 
-        if self.output["save_vocab_np"]: self.save_vocab_vectors(self.output["output_model_dir"], model_path, time, collection)
-        if self.output["save_vocab_txt"]: self.save_vocab_text(self.output["output_model_dir"], model_path, time, collection)
+        #if self.output["save_vocab_np"]: self.save_vocab_vectors(model_dir, model_path, time, collection)
+        #if self.output["save_vocab_txt"]: self.save_vocab_text(model_dir, model_path, time, collection)
+        if self.output["save_vocab_np"]: self.save_vocab_vectors(self.output["output_model_dir"], out_file)
+        if self.output["save_vocab_txt"]: self.save_vocab_text(self.output["output_model_dir"], out_file)
         return
 
-    def save_vocab_vectors(self, model_dir, model_path, time, collection):
+    def save_vocab_vectors(self, model_dir, model_path):
         '''
         Saves word vectors as numpy arrays
         '''
-        ex = self.load_model(model_path)
+        ex = self.load_model(model_dir + model_path)
         word_vectors = ex.wv.vectors
-        np.save(model_dir + '{}_{}_w2v.npy'.format(time, collection), word_vectors)
+        np.save(model_dir + model_path[:-4] + '_w2v.npy', word_vectors)
         return
     
-    def save_vocab_text(self, model_dir, model_path, time, collection):
+    def save_vocab_text(self, model_dir, model_path):
         '''
         Saves raw vocab into text file (one word per line)
         '''
-        ex = self.load_model(model_path)
+        ex = self.load_model(model_dir + model_path)
         vocab = [ k for k, v in ex.wv.vocab.items()]
-        with open(model_dir + '{}_{}_w2v.txt'.format(time, collection), "w") as output:
+        with open(model_dir + model_path[:-4] + '_w2v.txt', "w") as output:
             output.write("\n".join(str(i) for i in vocab))
         output.close()
         return
+        
+    #def save_vocab_vectors(self, model_dir, model_path, time, collection):
+    #    '''
+    #    Saves word vectors as numpy arrays
+    #    '''
+    #    ex = self.load_model(model_path)
+    #    word_vectors = ex.wv.vectors
+    #    np.save(model_dir + '{}_{}_w2v.npy'.format(time, collection), word_vectors)
+    #    return
+    
+    #def save_vocab_text(self, model_dir, model_path, time, collection):
+    #    '''
+    #    Saves raw vocab into text file (one word per line)
+    #    '''
+    #    ex = self.load_model(model_path)
+    #    vocab = [ k for k, v in ex.wv.vocab.items()]
+    #    with open(model_dir + '{}_{}_w2v.txt'.format(time, collection), "w") as output:
+    #        output.write("\n".join(str(i) for i in vocab))
+    #    output.close()
+    #    return
 
     def make_bert_model(self, time_series, collection):
         pass
