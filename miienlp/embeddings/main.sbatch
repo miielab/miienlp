@@ -11,6 +11,7 @@
 
 # load in python and dependencies
 echo "Job started at `date`"
+echo using $1 as input
 module load python
 source /project2/adukia/miie/text_analysis/dependencies/word_embedding/word_embedding/bin/activate
 
