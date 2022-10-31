@@ -5,7 +5,8 @@ from collections import Counter
 from ner import NER
 from utils import load_data
 from specific_words import SpecificWordCounts
-
+import nltk
+nltk.download('punkt')
 
 class TestCounts(object):
     def test_ner1(self):
