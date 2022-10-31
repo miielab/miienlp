@@ -43,3 +43,8 @@ jobs:
       run: |
         cd unittest/tokenCounts/
         pytest -k test_tokenCounts.py
+        
+    - name: Test Word Embeddings
+      run: |
+        cd unittest/wordEmbeddings/
+        pytest -k test_wordEmbeddings.py
