@@ -5,6 +5,8 @@ import glob, os
 import pandas as pd
 from alive_progress import alive_bar
 import argparse
+import nltk
+nltk.download('punkt')
 
 def main(args):
     params = utils.get_params(args['input'])
