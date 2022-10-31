@@ -23,8 +23,8 @@ class TestOCR:
         print(output)
         #assert "/ocr_output" in output
         assert "/ocr_combined" in output
-        
-     def test_default_uncombined_self(self):
+    
+    def test_default_uncombined_self(self):
         input_dir = "test_data/bloomer"
         input_dir = utils.validate_data_dir(input_dir)
         output = utils.validate_create_output_dir("", input_dir)
