@@ -22,7 +22,7 @@ output =\
  "save_vocab_txt": True
 }
 
-data_dir= ["../../examples/example_book_excerpt.txt"]
+data_dir= "../../examples/example_book_excerpt.txt"
 
 class TestWordEmbedding(object):
   '''  
