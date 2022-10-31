@@ -12,7 +12,7 @@ class TestOCR:
     def test_keywords(self):
         # tests alternative keyword option for classifying cover/end page
         text = "This page is a cover page. It contains an ISBN number"
-        GV = ScanGV("", "", 0.5, [], "", "", False)
+        GV = ScanGV("", "", 0.5, [], "", "")#, False)
         assert GV.keywords_decision(text) == 1
     '''
     def test_default_combined_self(self):
