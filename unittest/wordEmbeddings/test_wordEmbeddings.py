@@ -36,4 +36,4 @@ class TestWordEmbedding(object):
   def test_output(self):
         # tests output filename creation
         w2v_file = make_w2v_model()
-        assert output_file == "../../examples/test_results/model0.bin"
+        assert output_file == "../../examples/test_results/model_0.bin"
