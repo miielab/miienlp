@@ -43,7 +43,7 @@ class WordVectors(object):
         Saves word vectors as numpy arrays
         '''
         ex = self.load_model(model_dir + model_path)
-        word_vectors = ex.wv.vectors
+        word_vectors = ex.vectors #ex.wv.vectors
         np.save(model_dir + model_path[:-4] + '_w2v.npy', word_vectors)
         return
     
