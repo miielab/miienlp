@@ -22,7 +22,7 @@ class TestOCR:
         utils.remove_temp(output)
         print(output)
         #assert "/ocr_output" in output
-        assert "/ocr_combined" in output
+        assert "../../miienlp/ocr/ocr_combined" in output
     
     def test_default_uncombined_self(self):
         input_dir = "test_data/bloomer"
@@ -30,4 +30,4 @@ class TestOCR:
         output = utils.validate_create_output_uncombined("", input_dir)
         utils.remove_temp(output)
         print(output)
-        assert "/ocr_uncombined" in output
+        assert "../../miienlp/ocr/ocr_uncombined" in output
