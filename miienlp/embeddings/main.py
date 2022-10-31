@@ -39,4 +39,3 @@ if __name__ == "__main__":
     ap.add_argument('-i', "--input", required=False, help="Path to input yaml file")
     args = vars(ap.parse_args())
     main(args)
-
