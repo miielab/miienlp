@@ -18,7 +18,7 @@ class TestOCR:
     def test_default_combined_self(self):
         input_dir = "test_data/bloomer"
         input_dir = utils.validate_data_dir(input_dir)
-        output = utils.validate_create_output_dir("", input_dir)
+        output = utils.validate_create_output_combined("", input_dir)
         utils.remove_temp(output)
         print(output)
         #assert "/ocr_output" in output
@@ -27,7 +27,7 @@ class TestOCR:
     def test_default_uncombined_self(self):
         input_dir = "test_data/bloomer"
         input_dir = utils.validate_data_dir(input_dir)
-        output = utils.validate_create_output_dir("", input_dir)
+        output = utils.validate_create_output_uncombined("", input_dir)
         utils.remove_temp(output)
         print(output)
         assert "/ocr_uncombined" in output
