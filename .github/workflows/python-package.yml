@@ -34,11 +34,6 @@ jobs:
         cd unittest/aggregation/
         pytest -k test_aggregation.py
         
-    - name: Test OCR
-      run: |
-        cd unittest/ocr/
-        pytest -k test_ocr.py
-        
     - name: Test Token Counts
       run: |
         cd unittest/tokenCounts/
