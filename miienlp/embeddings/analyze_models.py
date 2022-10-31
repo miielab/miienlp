@@ -7,49 +7,25 @@ import nltk
 from nltk.corpus import stopwords
 import numpy as np
 
-# GROUPS AND DOMAINS
-race_genders = ["black_female", "black_male", "white_female", "white_male"]
-genders = ["male_famous", "female_famous"]
-races = ["white_famous", "black_famous"]
-domains = ["business", "power", "family", "struggle", "sports", "struggle", "performance_arts"]
-stop_words = set(stopwords.words('english'))
 
-# DATA
-mainstream_full_gender = "/project2/adukia/miie/text_analysis/models/word2vec/mainstream/full_bundled_gender/model_0.bin"
-diversity_full_gender = "/project2/adukia/miie/text_analysis/models/word2vec/diversity/full_bundled_gender/model_0.bin"
-mainstream_full_race = "/project2/adukia/miie/text_analysis/models/word2vec/mainstream/full_bundled_race/model_0.bin"
-diversity_full_race = "/project2/adukia/miie/text_analysis/models/word2vec/diversity/full_bundled_race/model_0.bin"
-mainstream_full_race_gender = "/project2/adukia/miie/text_analysis/models/word2vec/mainstream/full_bundled_race_gender/model_0.bin"
-diversity_full_race_gender = "/project2/adukia/miie/text_analysis/models/word2vec/diversity/full_bundled_race_gender/model_0.bin"
+def load_model(model_path):
+    '''
+    Loads in the model located at model_path
+    '''
+    return gensim.models.KeyedVectors.load_word2vec_format(model_path, binary=True)
 
-
-# LOAD MODELS
-mainstream_full_gender_model = gensim.models.KeyedVectors.load_word2vec_format(mainstream_full_gender, binary=True)
-diversity_full_gender_model = gensim.models.KeyedVectors.load_word2vec_format(diversity_full_gender, binary=True)
-mainstream_full_race_model = gensim.models.KeyedVectors.load_word2vec_format(mainstream_full_race, binary=True)
-diversity_full_race_model = gensim.models.KeyedVectors.load_word2vec_format(diversity_full_race, binary=True)
-mainstream_full_race_gender_model = gensim.models.KeyedVectors.load_word2vec_format(mainstream_full_race_gender, binary=True)
-diversity_full_race_gender_model = gensim.models.KeyedVectors.load_word2vec_format(diversity_full_race_gender, binary=True)
-
-models = {"Mainstream Full Gender": mainstream_full_gender_model, "Diversity Full Gender": diversity_full_gender_model, 
-          "Diversity Full Race Gender": diversity_full_race_gender_model, "Mainstream Full Race Gender": mainstream_full_race_gender_model,
-          "Mainstream Full Race": mainstream_full_race_model, "Diversity Full Race": diversity_full_race_model}
-
-#models = {"Mainstream Full Race Gender": mainstream_full_race_gender_model, "Diversity Full Race Gender": diversity_full_race_gender_model}
 
 def group_domain_similarity(group, domain, model):
     '''
     Calculate cosine similarity between a bundled group and domain word for a given model
     '''
     if group in model.vocab and domain in model.vocab:
-        #print(cosine_similarity(model[group], model[domain]))
         V1 = model[group]
         V2 = model[domain]
         sim = cosine_similarity([V1], [V2])[0][0]
     else:
         sim = None
     return sim
-
 
 def top_n_similar(category, model, n = 50):
     '''
@@ -67,12 +43,13 @@ def run_analysis():
     '''
     Create gender, race_gender, and top_n data frames
     '''
-    gender_domain_df = pd.DataFrame(columns = ['Model', 'Group', 'Domain', 'Cosine Similarity'])
+    #gender_domain_df = pd.DataFrame(columns = ['Model', 'Group', 'Domain', 'Cosine Similarity'])
     gender_centeredness_df = pd.DataFrame(columns = ['Model', 'Domain', 'Gender Centeredness'])
-    race_domain_df = pd.DataFrame(columns = ['Model', 'Group', 'Domain', 'Cosine Similarity'])
+    #race_domain_df = pd.DataFrame(columns = ['Model', 'Group', 'Domain', 'Cosine Similarity'])
     race_centeredness_df = pd.DataFrame(columns = ['Model', 'Domain', 'Race Centeredness'])
     race_gender_domain_df = pd.DataFrame(columns = ['Model', 'Group', 'Domain', 'Cosine Similarity'])    
-    top_n_df = pd.DataFrame(columns = ['Model', 'Category', 'Word', 'Similarity'])
+    #top_n_df = pd.DataFrame(columns = ['Model', 'Category', 'Word', 'Similarity'])
+
     for model in models:
         if model == "Mainstream Full Gender" or model == "Diversity Full Gender":
             for domain in domains:
@@ -116,8 +93,59 @@ def run_analysis():
     #race_domain_df.to_csv("race_domain.csv", index = False)
     # top_n_df.to_csv("top_n.csv", index = False)
 
+def run_analysis2(model_dir_list, groups, domains, race=False, race_gender=False, gender=False):
+    '''
+    '''
+    gender_centeredness_df = pd.DataFrame(columns = ['model', 'model_id', 'domain', 'gender_centeredness'])
+    race_centeredness_df = pd.DataFrame(columns = ['model', 'model_id', 'domain', 'race_centeredness'])
+    race_gender_domain_df = pd.DataFrame(columns = ['model', 'model_id', 'group', 'domain', 'cosine_similarity']) 
+
+    for model_type, model_path in model_dir_list.items():
+        models = os.listdir(model_path)
+        print(len(models))
+        for model in models:
+            model_bin = load_model(os.path.join(model_path, model))
+            model_id = model.split('_')[-1].split('.')[0]
+            # calculate race and gender cosine similarity
+            if race_gender: 
+                for group in groups:
+                    for domain in domains:
+                        g2d_sim = group_domain_similarity(group, domain, model_bin)
+                        if g2d_sim:
+                            race_gender_domain_df = race_gender_domain_df.append({'model':model_type, 'model_id':model_id, 'group':group, 'domain':domain, 'cosine_similarity':g2d_sim}, ignore_index=True)
+            #print(race_gender_domain_df)
+            # calculate race centeredness
+            if race:
+                for domain in domains:
+                    white_sim = group_domain_similarity("white_famous", domain, model_bin)
+                    black_sim = group_domain_similarity("black_famous", domain, model_bin)    
+                    if white_sim and black_sim:
+                        race_centeredness = black_sim - white_sim
+                        race_centeredness_df = race_centeredness_df.append({'model': model_type, 'model_id':model_id, 'domain': domain, 'race_centeredness': race_centeredness}, ignore_index=True)
+            # calculate gender centeredness
+            if gender: 
+                for domain in domains:
+                    female_sim = group_domain_similarity("female_famous", domain, model_bin)
+                    male_sim = group_domain_similarity("male_famous", domain, model_bin)
+                    if female_sim and male_sim:
+                        gender_centeredness = female_sim - male_sim
+                        gender_centeredness_df = gender_centeredness_df.append({'model': model_type, 'model_id':model_id, 'domain': domain, 'gender_centeredness': gender_centeredness}, ignore_index=True)
+    #race_gender_domain_df.to_csv("race_gender_domain.csv", index = False)
+    gender_centeredness_df.to_csv("gender_centeredness.csv", index = False)
+    #race_centeredness_df.to_csv("race_centeredness.csv", index = False)
+
 if __name__ == '__main__':
-    run_analysis()
+    groups = ["black_female", "black_male", "white_female", "white_male"]
+    #genders = ["male_famous", "female_famous"]
+    #races = ["white_famous", "black_famous"]
+    domains = ["business", "power", "family", "struggle", "sports", "struggle", "performance_arts"]
+    # model_dir_list = {'Bundled Diversity': '/project2/adukia/miie/text_analysis/models/simulation/bundled_race_gender/diversity/',
+    #                   'Bundled Mainstream': '/project2/adukia/miie/text_analysis/models/simulation/bundled_race_gender/mainstream/'}
+    #model_dir_list = {'Bundled Race Diversity': '/project2/adukia/miie/text_analysis/models/simulation/bundled_race/diversity/',
+    #                'Bundled Race Mainstream': '/project2/adukia/miie/text_analysis/models/simulation/bundled_race/mainstream/'}
+    model_dir_list = {'Bundled Gender Diversity': '/project2/adukia/miie/text_analysis/models/simulation/bundled_gender/diversity/',
+                    'Bundled Gender Mainstream': '/project2/adukia/miie/text_analysis/models/simulation/bundled_gender/mainstream/'}
+    run_analysis2(model_dir_list, groups, domains, gender=True)
 
 
 
