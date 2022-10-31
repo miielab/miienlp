@@ -52,7 +52,7 @@ class WordVectors(object):
         Saves raw vocab into text file (one word per line)
         '''
         ex = self.load_model(model_dir + model_path)
-        vocab = [ k for k, v in ex.wv.vocab.items()]
+        vocab = [ k for k, v in ex.vocab.items()] #vocab = [ k for k, v in ex.wv.vocab.items()]
         with open(model_dir + model_path[:-4] + '_w2v.txt', "w") as output:
             output.write("\n".join(str(i) for i in vocab))
         output.close()
