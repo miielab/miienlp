@@ -8,8 +8,6 @@ from page_divide import PageDivide
 import combine
 import utils
 
-
-
 class TestOCR:
     def test_keywords(self):
         # tests alternative keyword option for classifying cover/end page
