@@ -1,7 +1,7 @@
 import pytest, sys
 sys.path.insert(0, '../../miienlp/embeddings')
 from word_vecs import WordVectors
-from data_prep import WVecDataPreparation
+#from data_prep import WVecDataPreparation
 
 time_series =\
 {"type": "decade",
