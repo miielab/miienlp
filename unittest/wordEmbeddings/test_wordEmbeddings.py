@@ -39,7 +39,7 @@ class TestWordEmbedding(object):
         #word_vect = WordVectors(data_dir, model, output, '')
         #w2v_file = word_vect.make_w2v_model()
         #assert output_file == "../../examples/test_data/model_0.bin"
-        wemb = WordVectors(data_dir, model, output, 0)
+        wemb = WordVectors(data_dir, model, output, 3)
         wemb.make_w2v_model()
         
         assert os.path.exists('../../unittest/wordEmbeddings/test_data/model_0.bin')
