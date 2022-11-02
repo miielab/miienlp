@@ -1,0 +1,4 @@
+regex_def, replacement
+Martin Luther King(,\s|\s)(Jr(\.|)|Junior), Martin Luther King Junior
+(Abe|Abraham) Lincoln, Abraham Lincoln
+Honest Abe(\W), Abraham Lincoln
