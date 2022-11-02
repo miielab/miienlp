@@ -8,6 +8,7 @@ import nltk
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
+
 from nltk.stem import WordNetLemmatizer
 
 d1 = {
