@@ -1,0 +1,8 @@
+---
+raw_data_directory: /project2/adukia/miie/text_analysis/data/gv_raw/tx_onepage/
+n_gram_file: /project2/adukia/miie/text_analysis/supplemental_data/important_textbook_tokens.txt
+digits: True
+output_directory: /project2/adukia/miie/text_analysis/data/gv_clean_vectors/tx/
+lower: True
+special_characters: True
+...

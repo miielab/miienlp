@@ -1,0 +1,13 @@
+---
+raw_data_directory: /project2/adukia/miie/text_analysis/data/gv_raw/tx_onepage/
+output_directory: /project2/adukia/miie/text_analysis/data/gv_clean_counts/tx_onepage_fames/
+lower: True
+standardize_file: /project2/adukia/miie/text_analysis/supplemental_data/standardize_csv_race_gender/standardize_no_underscore.csv
+categorize_famous:
+  directory: /project2/adukia/miie/visualizations/texas/data/group
+  subcats: [female_asian, female_black, female_indigenous, female_latinx, female_multiracial, female_white, male_asian, male_black, male_indigenous, male_latinx, male_multiracial, male_white]
+  case_sensitive: False
+  fuzzy: True
+  threshold_fuzzy: 0.9
+spacy_ner_dataset: en_core_web_lg
+...
