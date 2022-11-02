@@ -44,3 +44,8 @@ jobs:
       run: |
         cd unittest/wordEmbeddings/
         pytest -k test_wordEmbeddings.py
+        
+    - name: Test Text Cleaning
+      run: |
+        cd unittest/textCleaning/
+        pytest -k test_textCleaning.py
