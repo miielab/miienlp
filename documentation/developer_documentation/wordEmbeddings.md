@@ -1,7 +1,7 @@
 # Word Embeddings
 ## Parameter Description
 There are different "sections" of parameters for this pipeline, only one which is required to have in your yaml file: 
-- `data_dir`: contains the input data directory information in a list format *(required)*
+- `data_dir`: contains the input data directory information in a list format. It has to be a txt file. *(required)*
 - `model`: contains information on what parameters/hyperparameters you want included in your model setup
 - `output`: contains information on where/what you want outputted once your word vector model is created
 **Note:** the `data_dir` input can be a list of txt files, list of directories, or a single directory or file.
