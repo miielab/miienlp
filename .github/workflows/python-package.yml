@@ -24,21 +24,22 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install flake8 pytest
-        if [ -f miienlp/requirements.txt ]; then pip install -r miienlp/requirements.txt; fi
-    - name: Test Aggregation
-      run: |
-        cd unittest/aggregation/
-        pytest -k test_aggregation.py
+    
+#    - name: Install dependencies
+#      run: |
+#        python -m pip install --upgrade pip
+#        python -m pip install flake8 pytest
+#        if [ -f miienlp/requirements.txt ]; then pip install -r miienlp/requirements.txt; fi
+#    - name: Test Aggregation
+#      run: |
+#        cd unittest/aggregation/
+#        pytest -k test_aggregation.py
         
-    - name: Test Token Counts
-      run: |
-        cd unittest/tokenCounts/
-        pytest -k test_tokenCounts.py
-        
+#    - name: Test Token Counts
+#      run: |
+#        cd unittest/tokenCounts/
+#        pytest -k test_tokenCounts.py
+         
     - name: Test Word Embeddings
       run: |
         cd unittest/wordEmbeddings/
