@@ -4,6 +4,8 @@ from nltk.corpus import stopwords
 sys.path.insert(0, '../../miienlp/text_cleaning/src/')
 from clean_text import CleanText
 import utils
+import nltk
+nltk.download('punkt')
 from nltk.stem import WordNetLemmatizer
 
 d1 = {
