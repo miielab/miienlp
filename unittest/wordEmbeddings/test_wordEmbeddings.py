@@ -7,7 +7,7 @@ from word_vecs import WordVectors
 model =\
 {"name": "word2vec",
   "size": 300,
-  "num_models": 1,
+  "num_models": 3,
   "window": 5,
   "min_count": 10,
   "workers": 5,
