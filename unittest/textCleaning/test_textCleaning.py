@@ -6,6 +6,7 @@ from clean_text import CleanText
 import utils
 import nltk
 nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 from nltk.stem import WordNetLemmatizer
 
 d1 = {
