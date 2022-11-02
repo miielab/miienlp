@@ -83,7 +83,6 @@ filelock==3.0.12
 ftfy==5.9
 cymem==2.0.5
 
-language-check==1.0
 murmurhash==1.0.4
 pycontractions==2.0.1
 pyemd==0.5.1
