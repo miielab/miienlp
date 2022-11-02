@@ -1,14 +1,25 @@
 from aggregation import Aggregation
 import utils
 import os, argparse
+import pandas as pd
+import glob
 
 def main(args):
     params = utils.get_params(args['input'])
-    ag = Aggregation(params['metadata_file'], params["output_dir"])
-    if isinstance(params["groups"], list):
-        ag.aggregate_lst(params["groups"])
-    elif isinstance(params["groups"], dict):
-        ag.aggregate_dict(params["groups"])
+    df = pd.read_csv('metadata.csv')
+    if df.shape[1] == 1: 
+        all_files = df["path"].tolist()
+        with open("combined_text.txt", "wb") as outfile:
+            for f in all_files:
+                with open(f, "rb") as infile:
+                    outfile.write(infile.read())
+    
+    else: 
+        ag = Aggregation(params['metadata_file'], params["output_dir"])
+        if isinstance(params["groups"], list):
+            ag.aggregate_lst(params["groups"])
+        elif isinstance(params["groups"], dict):
+            ag.aggregate_dict(params["groups"])
 
 
 if __name__ == "__main__":
