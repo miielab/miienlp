@@ -84,4 +84,5 @@ ftfy==5.9
 cymem==2.0.5
 
 
+levenshtein==0.20.8
 
