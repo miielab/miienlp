@@ -17,13 +17,15 @@ model =\
   "epochs":5
   }
 
+sys.path.insert(0, '../../unittest/wordEmbeddings')
+
 output =\
-{"output_model_dir": "../../examples/test_data/",
+{"output_model_dir": "test_data/",
  "save_vocab_np": True,
  "save_vocab_txt": True
 }
 
-data_dir= "../../examples/test_data/example_book_excerpt.txt"
+data_dir= "test_data/1992_tx_m_5_0021084963_s.txt"
 
 class TestWordEmbedding(object):
   '''  
@@ -39,5 +41,5 @@ class TestWordEmbedding(object):
         word_vect = WordVectors(data_dir, model, output, '')
         w2v_file = word_vect.make_w2v_model()
         #assert output_file == "../../examples/test_data/model_0.bin"
-        assert os.path.exists('../../examples/test_data/model_0.bin')
+        assert os.path.exists('test_data/model_0.bin')
         
