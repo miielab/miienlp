@@ -2,6 +2,10 @@
 ![Data Aggregation](https://github.com/miielab/DataAggregation/workflows/Data%20Aggregation/badge.svg)
 
 ## Description
+1) combined_file_path.py will generate a metadata CSV file to feed into the data aggregation pipeline. For example, you have a folder of txt files, and you want to aggregate them into one txt file. The first step is to create a metadata CSV file. 
+
+2) Then you run $python main.py -i input.yaml 
+
 This script combines data in customizable ways based on a metadata CSV file provided by the user. 
 
 Let's say that we have a collection of books and we want to determine whether stories that have a female protagonist are told in a different way than stories that have male protagonists. We can create a metadata spreadsheet that has information on the gender of the protagonist and the narration style (first person, not first person) of each book in the dataset. It may look something like this:
