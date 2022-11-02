@@ -143,7 +143,7 @@ class TestTextCleanClass:
 		sent =  " .."
 		cleaned = clean.clean_sentence(sent)
 		assert cleaned == ""
-	
+	'''
 	def test_standardization1(self):
 		# for bundled constructs
 		clean = CleanText("", standardize_file=d1["standardized_file"])
@@ -151,7 +151,8 @@ class TestTextCleanClass:
 		cleaned = clean.clean_sentence(sent)
 		print(cleaned)
 		assert cleaned == "martin_luther_king_junior martin_luther_king_junior Martin Luther King's abraham_lincoln and al_capone, said that douglas_fairbanks! house was nice and martin_luther_king_junior"
-
+	'''
+	
 	def test_lemmatize1(self):
 		# tests whether lemmatization works in clean sentence
 		clean = CleanText("", lower=True, lemmatize = True)
