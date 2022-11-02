@@ -1,4 +1,5 @@
 import pytest, sys
+import os.path
 sys.path.insert(0, '../../miienlp/embeddings')
 from word_vecs import WordVectors
 #from data_prep import WVecDataPreparation
@@ -37,5 +38,6 @@ class TestWordEmbedding(object):
         # tests output filename creation
         word_vect = WordVectors(data_dir, model, output, '')
         w2v_file = word_vect.make_w2v_model()
-        assert output_file == "../../examples/test_data/model_0.bin"
+        #assert output_file == "../../examples/test_data/model_0.bin"
+        assert os.path.exists('../../examples/test_data/model_0.bin')
         
