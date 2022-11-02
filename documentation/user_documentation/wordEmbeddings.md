@@ -16,7 +16,7 @@
 ```
 ---
 # word embedding inputs
-data_dir: [/home/Desktop/testing_data]
+data_dir: [/home/Desktop/testing_data.txt]
 ...
 ```
 5. Run the default pipeline:
