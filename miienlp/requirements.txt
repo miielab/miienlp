@@ -87,3 +87,5 @@ cymem==2.0.5
 levenshtein==0.20.8
 
 unidecode==1.1.0
+
+statsmodels==0.12.2
