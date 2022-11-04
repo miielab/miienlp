@@ -40,12 +40,17 @@ jobs:
 #        cd unittest/tokenCounts/
 #        pytest -k test_tokenCounts.py
          
-    - name: Test Word Embeddings
-      run: |
-        cd unittest/wordEmbeddings/
-        pytest -k test_wordEmbeddings.py
+#   - name: Test Word Embeddings
+#      run: |
+#        cd unittest/wordEmbeddings/
+#        pytest -k test_wordEmbeddings.py
         
-    - name: Test Text Cleaning
-      run: |
-        cd unittest/textCleaning/
-        pytest -k test_textCleaning.py
+#    - name: Test Text Cleaning
+#      run: |
+#        cd unittest/textCleaning/
+#        pytest -k test_textCleaning.py
+
+     - name: Test Text Cleaning
+       run: |
+         cd unittest/WEAT/
+         pytest -k test_WEAT.py
