@@ -32,3 +32,29 @@ This CSV file is used as input for WEAT cleaning. It contains 3 columns: categor
 
 1. Edit and replace the `input.yaml` file in the [weat folder](https://github.com/miielab/miienlp/tree/main/miienlp/weat).
 2. [Run the pipeline](https://github.com/miielab/miienlp/blob/main/documentation/user_documentation/weat.md).
+
+## Output Explaination 
+The output will be stored as a json file. It may look like this: 
+
+'''
+{
+            "appearance": {
+                        "model": {
+                                    "M_Assoc": 0.7939108979019815,
+                                    "F_Assoc": 0.9106496851984686,
+                                    "Abs_Bias": 0.11673878729648701,
+                                    "Bias": 0.11673878729648701,
+                                    "EWP": 0.2,
+                                    "P_value": 0.7669462792247821,
+                                    "T_statistic": -0.29637164228572616,
+                                    "N1": 3.0,
+                                    "N2": 2.0
+                        }
+            }
+}
+''' 
+
+Since we calculate the cosin-similarity betweens male/female words and apperance-related words, the results here mean that appearance words are more associated with female than male. The range for association is from 0 to 1. 0 means that are not related. 
+
+
+
