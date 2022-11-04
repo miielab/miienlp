@@ -30,6 +30,12 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
         if [ -f miienlp/requirements.txt ]; then pip install -r miienlp/requirements.txt; fi
+        
+    - name: Test WEAT
+      run: |
+        cd unittest/WEAT/
+        pytest -k test_WEAT.py
+        
 #    - name: Test Aggregation
 #      run: |
 #        cd unittest/aggregation/
@@ -50,7 +56,4 @@ jobs:
 #        cd unittest/textCleaning/
 #        pytest -k test_textCleaning.py
 
-     - name: Test Text Cleaning
-       run: |
-         cd unittest/WEAT/
-         pytest -k test_WEAT.py
+
