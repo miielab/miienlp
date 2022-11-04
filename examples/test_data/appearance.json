@@ -1,15 +1,15 @@
 {
     "test": {
         "appearance": [
-            "/Users/elisachen/Documents/GitHub/miienlp/examples/test_data/test_domain/example_domain_appearance.txt"
+            "test_domain/example_domain_appearance.txt"
         ]
     },
     "gender": {
         "male": [
-            "/Users/elisachen/Documents/GitHub/miienlp/examples/test_data/test_group/male.txt"
+            "test_group/male.txt"
         ],
         "female": [
-            "/Users/elisachen/Documents/GitHub/miienlp/examples/test_data/test_group/female.txt"
+            "test_group/female.txt"
         ]
     }
 }
