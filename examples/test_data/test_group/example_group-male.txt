@@ -1,0 +1,10 @@
+abuelo
+uncle
+knight
+son
+empror
+wizard
+male
+boy
+prince
+king
