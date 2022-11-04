@@ -6,10 +6,10 @@
     },
     "gender": {
         "male": [
-            "test_group/male.txt"
+            "test_group/example_group-male.txt"
         ],
         "female": [
-            "test_group/female.txt"
+            "test_group/example_group-female.txt"
         ]
     }
 }
