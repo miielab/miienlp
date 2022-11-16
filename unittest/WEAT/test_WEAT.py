@@ -10,7 +10,7 @@ params =\
 'model_directory': "../../examples/test_data/",
 'output_directory' : "../../examples/test_data/",
 'output_file' : "../../examples/test_data/weat_output_file.json",
-'test_directory': "../../examples/test_data/",
+'test_directory': "../../examples/test_data/json_weat/",
 'vocabulary_suffix': "npy",
 'embeddings_suffix': "txt",
 'reuse_fetchvec': "t",
