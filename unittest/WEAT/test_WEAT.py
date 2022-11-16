@@ -26,7 +26,7 @@ class TestWEAT(object):
                           params["test_directory"],
                           params["vocabulary_suffix"],
                           params["embeddings_suffix"])
-            fv.fetch_vectors()
+      fv.fetch_vectors()
 
       wt = Single_WordTest(params["test_directory"],
                            params["output_directory"],
