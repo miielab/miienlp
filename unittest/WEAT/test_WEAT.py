@@ -1,7 +1,8 @@
 import pytest, sys
 import os.path
 sys.path.insert(0, '../../miienlp/weat')
-from wordtest import Single_WordTest, T1, T2
+from wordtest import Single_WordTest, T1, T2, Multiple_WordTests
+from fetchvec import FetchVec
 
 params =\
 {'run_analysis': "t",
@@ -27,12 +28,12 @@ class TestWEAT(object):
                           params["embeddings_suffix"])
             fv.fetch_vectors()
 
-        wt = Multiple_WordTests(params["test_directory"],
-                                params["output_directory"],
-                                params["output_file"])
-    
-        # tests output filename creation
-        weat_scores = T1() #curr_test -- 3 embed, curr_model
-        weat_scores.single_full_test()
-        
-        assert os.path.exists('../../examples/test_data/weat_output_file.json')
+      wt = Single_WordTest(params["test_directory"],
+                           params["output_directory"],
+                           params["output_file"])
+
+      # tests output filename creation
+      weat_scores = T1() #curr_test -- 3 embed, curr_model
+      weat_scores.single_full_test()
+
+      assert os.path.exists('../../examples/test_data/weat_output_file.json')
