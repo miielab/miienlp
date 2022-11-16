@@ -1,0 +1,15 @@
+{
+    "test": {
+        "appearance": [
+            "../test_domain/example_domain_appearance.txt"
+        ]
+    },
+    "gender": {
+        "male": [
+            "../test_group/example_group-male.txt"
+        ],
+        "female": [
+            "../test_group/example_group-female.txt"
+        ]
+    }
+}
