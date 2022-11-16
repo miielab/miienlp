@@ -1,7 +1,7 @@
 {
     "test": {
         "appearance": [
-            "test_domain/example_domain_appearance.txt"
+            "../test_domain/example_domain_appearance.txt"
         ]
     },
     "gender": {
