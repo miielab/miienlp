@@ -9,7 +9,7 @@
     ```
     $ pip install --user -r requirements.txt
     ```
-    - OR Activate the virtual environment in the Adukia project space on Midway
+    - (MiiE Lab RA ONLY) OR Activate the virtual environment in the Adukia project space on Midway
     ```
     $ source /project2/adukia/miie/text_analysis/dependencies/token_counts/token_counts/bin/activate
     ```
