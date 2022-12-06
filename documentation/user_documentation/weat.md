@@ -30,12 +30,12 @@ To run the code directly:
   "python main.py"
   ```
   
-To run the code on a slurm system:
+To run the code on a slurm system (MiiE Lab RA ONLY):
   ```	
   sbatch runbrwl.batch
   ```
   
-If you are on Midway:
+If you are on Midway (MiiE Lab RA ONLY):
   ```
   1. module load Anaconda3/5.3.0
   2. conda create -n weat
