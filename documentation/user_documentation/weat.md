@@ -51,7 +51,7 @@ If you are on your own computer:
 Then:
   ```
   1. conda install numpy
-  2. conda install sklearn
+  2. conda install -c anaconda scikit-learn
   3. conda install scipy
   4. conda install statsmodels
   5. conda install pyyaml
