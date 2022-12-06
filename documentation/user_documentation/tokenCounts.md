@@ -2,7 +2,7 @@
 ## How to Run
 1. Fork or clone the TokenCounts repository
 2. Change directories to the TokenCounts repository `$ cd TokenCounts`
-3. If on Midway, load in Python3 (`module load python`), or make sure it is already installed on your personal device
+3. (MiiE Lab RA ONLY) If on Midway, load in Python3 (`module load python`), or make sure it is already installed on your personal device
 4. (Optional) Create and activate a virtual environment (this will ensure any packages downloaded on your personal device do not conflict with the dependencies needed to run this script)
 5. Download the dependencies in one of two ways:
     - In the TokenCounts directory type:
