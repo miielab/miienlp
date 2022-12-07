@@ -25,12 +25,4 @@
   $ python src/main.py
   ```
 
-## Default input.yaml file
-
-```
----
-raw_data_directory: /path/to/raw_data_dir # only required input
-...
-```
-
 **IMPORTANT:** See [custom parameters](https://github.com/miielab/miienlp/blob/main/documentation/developer_documentation/ocr.md) for more options.
