@@ -1,16 +1,7 @@
 # Text Cleaning
 
-## Example (default pipeline)
+The only required input is the `raw_data_directory` (i.e., the folder containing the text data).
 
-The only required input: `raw_data_directory` (i.e., the folder containing the text data).
-
-### Example of a default input.yaml file
-
-```
----
-raw_data_directory: /path/to/raw_data_dir # only required input
-...
-```
 ### How to Run
 
 1. Edit and replace the `input.yaml` file located in the [Text Cleaning folder](https://github.com/miielab/miienlp/tree/main/miienlp/text_cleaning/src). 
@@ -20,10 +11,17 @@ raw_data_directory: /path/to/raw_data_dir # only required input
 $ python src/main.py -i /path/to/input/yaml
 ```
 
-## Example (customized pipeline)
-1. To customize your text cleaning pipeline (see below table for options), edit and save the `src/input.yaml` file and run the pipeline (`python src/main.py -i /path/to/input/yaml`)
+### Example of a default input.yaml file
 
-### Customizable input.yaml file specifications 
+```
+---
+raw_data_directory: /path/to/raw_data_dir # only required input
+...
+```
+
+
+### Example of a customized pipeline
+
 ```
 ---
 raw_data_directory: /path/to/raw_data_dir
@@ -51,18 +49,20 @@ special_characters: False
 ...
 ```
 
-**The data directory containing raw text is the only required input. Custom flag and default options are detailed below.**
-
-
 
 ## A few notes
-- When only the raw text data directory is provided, the only cleaning performed will be (1) removing excess new line characters and white spaces and (2) removing non-ASCII characters
-- When removing special characters, we do not remove the character `_`. This is because when using n-grams or some categorizations, we do not want to split up words.
-- For case-sensitive domain categorizations, all words in a given list must be lowercase unless the word should only be categorized if uppercased. 
-- In order to perform domain categorizations, removing special characters is *highly recommended*
+1. When only the raw text data directory is provided, the only cleaning performed will be: 
+    - removing excess new line characters and white spaces 
+    - removing non-ASCII characters
+    
+2. When removing special characters, we do not remove the character `_`. This is because when using n-grams or some categorizations, we do not want to split up words.
+
+3. For case-sensitive domain categorizations, all words in a given list must be lowercase unless the word should only be categorized if uppercased. 
+
+4. In order to perform domain categorizations, removing special characters is *highly recommended*.
 
 
-## Clean Counts input.yaml Example
+### Clean Counts input.yaml Example
 
 ```
 ---
@@ -73,7 +73,7 @@ lower: False
 ...
 ```
 
-## Clean Vectors input.yaml Example
+### Clean Vectors input.yaml Example
 
 ```
 ---
@@ -85,7 +85,7 @@ special_characters: True
 ...
 ```
 
-## Race Gender Bundled Constructs input.yaml Example
+### Race Gender Bundled Constructs input.yaml Example
 
 ```
 ---
