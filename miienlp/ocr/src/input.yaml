@@ -1,11 +1,11 @@
 ---
 #OCR inputs
- # REQUIRED: path to directory containing scans, or directory of directories containing scans
-raw_data_directory: /Users/elisachen/Documents/Projects /MiiE/sample_books/2017_caldecott_honor_brosgol
+ # REQUIRED: path to directory containing images 
+raw_data_directory: /miienlp/examples/test_data/test_scans/ 
 combination_type: both
-output_combined: /Users/elisachen/Documents/Projects /MiiE/sample_books/ocr_2017_caldecott_honor_brosgol/combined # path to desired output, default is /path/to/raw/../ocr_output
-output_uncombined: /Users/elisachen/Documents/Projects /MiiE/sample_books/ocr_2017_caldecott_honor_brosgol/uncombined 
-ocr_method: Google Vision # Google Vision or Tesseract (Tesseract not yet working)
+output_combined: /miienlp/examples/test_data/test_scans/combined
+output_uncombined: /miienlp/examples/test_data/test_scans/uncombined
+ocr_method: Google Vision 
 confidence_threshold: 0.5 # Value between 0 and 1, inclusive
 image_ordering: alphabetical # order: page_1.jpg, page_2.jpg, page_3.jpg
 language: ["English"]
