@@ -10,7 +10,7 @@
     $ pip install --user -r requirements.txt
     ```
 4. Edit and save `ocr/src/input.yaml` file.
-5. To use our OCR method, you have to apply [google vision api credentials] (https://cloud.google.com/vision/docs/setup) and download google application credentials. You will get $300 in free credits to run, test, and deploy workloads if you are a new user of Google Cloud. 
+5. To use our OCR method, you have to apply [google vision api credentials](https://cloud.google.com/vision/docs/setup) and download google application credentials. You will get $300 in free credits to run, test, and deploy workloads if you are a new user of Google Cloud. 
 6. After obtaining your google api credentials (for example, we have TextAnalysis--8fc4fa534750.json, please put that in your ocr/src folder, and type this in the terminal: 
    ```
    export GOOGLE_APPLICATION_CREDENTIALS=src/TextAnalysis-8fc4fa534750.json
