@@ -2,25 +2,21 @@
 
 ## How to Run 
 
-1. Fork or clone the OCR repo (OR locate directory on Midway by typing `cd /project2/adukia/miie/text_analysis/code/OCR`)
-2. (Optional) If you have access to a compute node that has internet access, you can connect to it now. Otherwise, skip this step.
-3. Load in Python (`module load python`) and download the dependencies in one of two ways:
+1. Fork or clone the OCR repo 
+2. (Optional) Create a virtual or conda environment and activate that environment (this will ensure that any packages you already have downloaded on your personal computer do not conflict with the packages you will be installing for this analysis).
+3. Load in Python (`module load python`) and download the dependencies:
     - In the OCR folder, type:
     ```
     $ pip install --user -r requirements.txt
     ```
-    - OR Activate the virtual environment if you have access to the adukia project space on Midway
-    ```
-    $ source /project2/adukia/miie/text_analysis/dependencies/OCR/OCR/bin/activate
-    ```
-3. Edit and save `ocr/src/input.yaml` file.
-4. If using Google Vision, type:
+4. Edit and save `ocr/src/input.yaml` file.
+5. To use our OCR method, you have to apply [google vision api credentials] (https://cloud.google.com/vision/docs/setup) and download google application credentials. You will get $300 in free credits to run, test, and deploy workloads if you are a new user of Google Cloud. 
+6. After obtaining your google api credentials (for example, we have TextAnalysis--8fc4fa534750.json, please put that in your ocr/src folder, and type this in the terminal: 
    ```
-   export GOOGLE_APPLICATION_CREDENTIALS=src/google_auth_key/TextAnalysis-8fc4fa534750.json
+   export GOOGLE_APPLICATION_CREDENTIALS=src/TextAnalysis-8fc4fa534750.json
    ```
-   **Note:** If you have forked/cloned this repository you need to specify the path to your own google credentials above to replace ours (`src/google_auth_key/TextAnalysis-8fc4fa534750.json`)
 
-5. Run the pipeline:
+7. Run the pipeline:
   ```
   $ python src/main.py
   ```
