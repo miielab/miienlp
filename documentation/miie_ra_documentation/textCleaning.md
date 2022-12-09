@@ -10,7 +10,7 @@
     ```
     - OR Activate the virtual environment if you have access to the adukia project space on Midway
     ```
-    $ source /project2/adukia/miie/text_analysis/dependencies/OCR/OCR/bin/activate
+    $ source /project2/adukia/miie/text_analysis/dependencies/text_cleaning/text_cleaning/bin/activate
     ```
     
 4. Run the pipeline:
