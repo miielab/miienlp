@@ -1,3 +1,4 @@
+# Optical Character Recognition (OCR)
 ## How to Run (for UChicago MiiE Lab RA ONLY) 
 
 1. Fork or clone OCR repo (OR locate directory on Midway by typing `cd /project2/adukia/miie/text_analysis/code/OCR`)
