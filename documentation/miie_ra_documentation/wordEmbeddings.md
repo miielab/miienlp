@@ -15,7 +15,7 @@
     - OR Activate the virtual environment (if you have access to the adukia project space on Midway)
     ```
     $ source /project2/adukia/miie/text_analysis/dependencies/word_embedding/word_embedding/bin/activate
-
+    ```
 4. Edit the `data_dir` parameter in the default input.yaml file (located at `src/input.yaml`) to include the path where your data is located. 
 
 5. Run the default pipeline:
