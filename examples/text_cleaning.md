@@ -2,7 +2,7 @@
 
 The only required input is the `raw_data_directory` (i.e., the folder containing the text data).
 
-### How to Run
+## How to Run
 
 1. Edit and replace the `input.yaml` file located in the [Text Cleaning folder](https://github.com/miielab/miienlp/tree/main/miienlp/text_cleaning/src). 
 
@@ -10,6 +10,18 @@ The only required input is the `raw_data_directory` (i.e., the folder containing
 ```
 $ python src/main.py -i /path/to/input/yaml
 ```
+
+## A few notes
+1. When only the raw text data directory is provided, the only cleaning performed will be: 
+    - removing excess new line characters and white spaces 
+    - removing non-ASCII characters
+    
+2. When removing special characters, we do not remove the character `_`. This is because when using n-grams or some categorizations, we do not want to split up words.
+
+3. For case-sensitive domain categorizations, all words in a given list must be lowercase unless the word should only be categorized if uppercased. 
+
+4. In order to perform domain categorizations, removing special characters is *highly recommended*.
+
 
 ### Example of a default input.yaml file
 
@@ -48,19 +60,6 @@ lower: False
 special_characters: False
 ...
 ```
-
-
-## A few notes
-1. When only the raw text data directory is provided, the only cleaning performed will be: 
-    - removing excess new line characters and white spaces 
-    - removing non-ASCII characters
-    
-2. When removing special characters, we do not remove the character `_`. This is because when using n-grams or some categorizations, we do not want to split up words.
-
-3. For case-sensitive domain categorizations, all words in a given list must be lowercase unless the word should only be categorized if uppercased. 
-
-4. In order to perform domain categorizations, removing special characters is *highly recommended*.
-
 
 ### Clean Counts input.yaml Example
 
