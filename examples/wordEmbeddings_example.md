@@ -11,7 +11,7 @@ Below is an example of an input.yaml file that takes advantage of all possible c
 data_dir: [test_data/example_book_excerpt.txt]
 
 model:
-  name: bert
+  name: word2vec
   size: 300
   window: 7
   min_count: 50
