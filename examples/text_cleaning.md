@@ -1,6 +1,6 @@
    
 ## Example (default pipeline)
-1. Edit or create an input.yaml file located at src/input.yaml. Add your raw_data_directory path (i.e. where your data is located) and save the file. Your yaml file should look something like this: 
+1. Edit or create an input.yaml file located at src/input.yaml. Add your raw_data_directory path (i.e. the folder of your txt data) and save the file. Your yaml file should look something like this: 
 ```
 ---
 raw_data_directory: /path/to/raw_data_dir # only required input
