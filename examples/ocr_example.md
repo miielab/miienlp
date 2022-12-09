@@ -36,7 +36,17 @@ For more details, refer to the [Custom and Default Options](https://github.com/m
     ```
     $ python src/main.py
     ```
+3. After running the code successfully, you will be expected to see something like this: 
+    ```
+    ####################################
+    Number of already existing OCRs: 1
+    Number of attempted OCRs: 46
+    Number of successful OCRs: 46
+    Run Time (sec):  72.31184983253479
+    ####################################
+    ```
 
+## Output 
 
-
+In the output path folder you specify, you will see a new combind.txt file, and uncombined folder, containing the text in the images. 
 
