@@ -24,10 +24,3 @@ $ cd DataAggregation
 ```
 $ pip install -r requirements.txt
 ```
-
-
-## Dependencies
-- pandas
-- numpy
-
-For more information on versions and other dependencies, see the requirements.txt file
