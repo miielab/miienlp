@@ -2,6 +2,8 @@
 ![Data Aggregation](https://github.com/miielab/DataAggregation/workflows/Data%20Aggregation/badge.svg)
 
 ## Description
+If you are running TextCleaning on a folder of files, you may get several txt.file as a result. This package will help you aggregate the txt files into on large txt file so that you can feed this single file into TokenCounts or WordEmbedding pipeline. 
+
 1) combined_file_path.py will generate a metadata CSV file to feed into the data aggregation pipeline. For example, you have a folder of txt files, and you want to aggregate them into one txt file. The first step is to create a metadata CSV file. 
 
 2) Then you run $python main.py -i input.yaml 
