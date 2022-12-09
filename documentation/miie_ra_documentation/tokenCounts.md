@@ -1,7 +1,10 @@
 # Token Counts
 ## How to Run (for UChicago MiiE Lab RA ONLY) 
 
-1. Fork or clone the `TokenCounts` repository (OR locate directory on Midway by typing `cd /project2/adukia/miie/text_analysis/code/TokenCounts`)
+1. Fork or clone the `TokenCounts` repository OR locate the directory on Midway by typing: 
+
+   `cd /project2/adukia/miie/text_analysis/code/TokenCounts`
+   
 2. (Optional) If you have access to a compute node that has internet access, you can connect to it now. Otherwise, skip this step.
 3. Load in Python (`module load python`) and download the dependencies in one of two ways:
     - In the TokenCounts folder, type:
@@ -19,7 +22,7 @@
     - `sinteractive --account=pi-adukia --time=02:00:00 --partition=broadwl --mem=10GB`
     - Remember to adjust the time / memory / partition based on how much time, memory, and compute power your job will need
  
-5. Run the pipeline:
+6. Run the pipeline:
   ```
   $ python src/main.py -i /path/to/input/yaml
   ```
