@@ -11,8 +11,8 @@ Over the past ~5 years, researchers have consistently identified Google Cloud Vi
 
 For more details, see:
 - [example](https://github.com/miielab/miienlp/blob/main/examples/ocr_example.md) 
-- [setup instructions for UChicago MiiE Lab RA ONLY)](https://github.com/miielab/miienlp/blob/main/documentation/miie_ra_documentation/ocr.md)
-- [setup instructions for running OCR locally)](https://github.com/miielab/miienlp/blob/main/documentation/user_documentation/ocr.md)
+- [setup instructions for UChicago MiiE Lab RA ONLY](https://github.com/miielab/miienlp/blob/main/documentation/miie_ra_documentation/ocr.md)
+- [setup instructions for running OCR locally](https://github.com/miielab/miienlp/blob/main/documentation/user_documentation/ocr.md)
 
 
 
