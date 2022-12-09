@@ -18,4 +18,6 @@
   $ python src/main.py -i /path/to/input/yaml
   ```
   
+ **IMPORTANT:** See [custom parameters](https://github.com/miielab/miienlp/blob/main/documentation/developer_documentation/textCleaning.md) for more options.
+
 
