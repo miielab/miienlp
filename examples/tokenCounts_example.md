@@ -17,14 +17,6 @@ ner:
 
 ```
 
-### How to Run
-
-1. Edit and replace the `input.yaml` file in the [Token Counts folder](https://github.com/miielab/miienlp/tree/main/miienlp/token).
-2. Run the customized NER pipeline:
-    ```
-    $ python main.py -i /path/to/input/yaml
-    ```
-
 ## Example (Specific Word Counts Only)
 
 ```
@@ -39,15 +31,8 @@ specific_words:
   output_dir: ENTER_YOUR_OUTPUT_DIR_PATH #where you would like your results stored
 ...
 ```
-Note: the [Categories](https://github.com/miielab/Categories) GitHub repository contains all potential specific words we are interested in for our analysis in particular. One may create new categories, or rely on the already existing categories. 
+**Note:** the [Categories](https://github.com/miielab/Categories) GitHub repository contains all potential specific words we are interested in (for our analysis in particular). One may create new categories, or rely on the already existing categories. 
 
-### How to Run
-
-1. Edit and replace the `input.yaml` file in the [Token Counts folder](https://github.com/miielab/miienlp/tree/main/miienlp/token).
-2. Run the customized NER pipeline:
-    ```
-    $ python main.py -i /path/to/input/yaml
-    ```
 
 
 ## Example (Both NER + Specific Word Counts)
@@ -73,4 +58,8 @@ specific_words:
 
 ### How to Run
 
-1. To run both specific words and NER in one go, simply combine the fields in the specific word count section with the fields in the NER section into one large `input.yaml` file and then run `python main.py -i /path/to/input/yaml`
+1. Edit and replace the `input.yaml` file in the [Token Counts folder](https://github.com/miielab/miienlp/tree/main/miienlp/token).
+2. Run the customized NER pipeline:
+    ```
+    $ python main.py -i /path/to/input/yaml
+    ```
