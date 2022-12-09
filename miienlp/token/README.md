@@ -3,16 +3,27 @@
 
 ## What does it do?
 
-For this package, we provide NER (Named Entity Recognition), and TokenCounts code. Both are NLP techniques that allow you to gain insight into what types of names and words are being used in your text. 
+In this package, we provide both the NER (Named Entity Recognition), and the TokenCounts code. Both are NLP techniques that allows one to gain insight into what types of names and words are being used in a text. 
 
 
 ### What is NER?
 
-If we want to extract key information such as Person, Organization, Place/location, Date/time in text, we can use NER to do it.
+For extracting key information such as Person, Organization, Place/Location, Date/Time from a text, we can use NER to do it.
 
 ### What is TokenCounts:
 
-Sometimes, we'd like to know the frequency of a group-related or domain-related words (token counts) appearing in the text. For example, we can calculate gender token counts by counting the number of tokens with a gender association. Female gendered tokens consist of pronouns and other gendered terms such as she, her, queen, aunt, and girl. We have compiled a list of domain and group related words for users to implement. You can also create your own list of domains. 
+Sometimes, we'd like to know the frequency of a group-related or domain-related words (i.e., token counts) appearing in the text. For example, we can calculate gender token counts by counting the number of tokens with a gender association (e.g., female gendered tokens consist of pronouns and other gendered terms such as she, her, queen, aunt, and girl). 
 
-For more details, see the [example](https://github.com/miielab/miienlp/blob/main/examples/tokenCounts_example.md) and [How to Run](https://github.com/miielab/miienlp/blob/main/documentation/user_documentation/tokenCounts.md) sections.
+**Note:** We have compiled a list of domain and group related words for users to use. You can also create additional list of domains. 
+
+
+**IMPORTANT** 
+
+For more details, see:
+- [example](https://github.com/miielab/miienlp/blob/main/examples/tokenCounts_example.md) 
+- [setup instructions for UChicago MiiE Lab RA ONLY](https://github.com/miielab/miienlp/blob/main/documentation/miie_ra_documentation/tokenCounts.md)
+- [setup instructions for running TokenCounts locally](https://github.com/miielab/miienlp/blob/main/documentation/user_documentation/tokenCounts.md)
+
+
+
 
