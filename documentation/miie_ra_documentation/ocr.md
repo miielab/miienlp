@@ -23,3 +23,4 @@
   ```
   $ python src/main.py
   ```
+**IMPORTANT:** See [custom parameters](https://github.com/miielab/miienlp/blob/main/documentation/developer_documentation/ocr.md) for more options.
