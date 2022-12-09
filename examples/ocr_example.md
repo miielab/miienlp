@@ -45,6 +45,7 @@ For more details, refer to the [Custom and Default Options](https://github.com/m
     Run Time (sec):  72.31184983253479
     ####################################
     ```
+4. If you want to re-run OCR on the same folder of files, please delete the previous output folder.
 
 ## Output 
 
