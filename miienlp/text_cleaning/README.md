@@ -6,20 +6,7 @@
 This platform will perform various cleaning of text for multiple areas of research including but not limited to: lexicon counts, contextual word vectors, sentiment analysis, and bundled constructs. A user can specify which cleaning they want done on their raw text, with some example input files for specific cleaning provided. 
 
 
-## Setup 
-1. Fork or clone the TextCleaning repo and change directories (`cd TextCleaning`)
-2. (Optional) Connect to a compute node (if on Midway)
-3. Install Python (or type `module load python` on Midway)
-4. (Optional) Create a virtual or conda environment (will ensure packages installed on your device will not conflict with the ones needed for this analysis)
-5. Download the dependencies in one of two ways:
-    - In the `TextCleaning` folder type:
-    ```
-    $ pip install --user -r requirements.txt
-    ```
-    - OR Activate the virtual environment in the adukia project space on Midway
-    ```
-    $ source /project2/adukia/miie/text_analysis/dependencies/text_cleaning/text_cleaning/bin/activate
-    ```
+
     
 ## Example (default pipeline)
 1. Edit or create an input.yaml file located at src/input.yaml. Add your raw_data_directory path (i.e. where your data is located) and save the file. Your yaml file should look something like this: 
