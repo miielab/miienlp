@@ -1,11 +1,20 @@
-   
+# Text Cleaning
+
 ## Example (default pipeline)
-1. Edit or create an input.yaml file located at src/input.yaml. Add your raw_data_directory path (i.e. the folder of your txt data) and save the file. Your yaml file should look something like this: 
+
+### The only required input: `raw_data_directory` (i.e., the folder containing the text data).
+
+## Example of a default input.yaml file
+
 ```
 ---
 raw_data_directory: /path/to/raw_data_dir # only required input
 ...
 ```
+## How to Run
+
+1. Edit and replace the `input.yaml` file located in the [Text Cleaning folder](https://github.com/miielab/miienlp/tree/main/miienlp/text_cleaning/src). 
+
 2. Run the default pipeline:
 ```
 $ python src/main.py -i /path/to/input/yaml
