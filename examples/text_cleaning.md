@@ -2,15 +2,6 @@
 
 The only required input is the `raw_data_directory` (i.e., the folder containing the text data).
 
-## How to Run
-
-1. Edit and replace the `input.yaml` file located in the [Text Cleaning folder](https://github.com/miielab/miienlp/tree/main/miienlp/text_cleaning/src). 
-
-2. Run the default pipeline:
-```
-$ python src/main.py -i /path/to/input/yaml
-```
-
 ## A few notes
 1. When only the raw text data directory is provided, the only cleaning performed will be: 
     - removing excess new line characters and white spaces 
@@ -105,4 +96,13 @@ categorize_famous:
 spacy_ner_dataset: en_core_web_lg
 gender_ssa_file: /project2/adukia/miie/visualizations/supplemental/data/SSA_names.csv
 ...
+```
+
+## How to Run
+
+1. Edit and replace the `input.yaml` file located in the [Text Cleaning folder](https://github.com/miielab/miienlp/tree/main/miienlp/text_cleaning/src). 
+
+2. Run the default pipeline:
+```
+$ python src/main.py -i /path/to/input/yaml
 ```
