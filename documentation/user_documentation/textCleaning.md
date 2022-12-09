@@ -9,7 +9,7 @@
     ```
     $ pip install --user -r requirements.txt
     ```
-4. Edit and save `ocr/src/input.yaml` file.
+4. Edit and save `text_cleaning/src/input.yaml` file.
   
 5. Run the pipeline:
   ```
