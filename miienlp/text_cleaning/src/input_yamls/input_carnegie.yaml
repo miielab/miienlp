@@ -1,8 +1,0 @@
-raw_data_directory: /project2/adukia/miie/text_analysis/data/carnegie_mathia/pipeline_mathia_data/2_combined # only required input
-output_directory: /project2/adukia/miie/text_analysis/data/carnegie_mathia_clean/
-gender_ssa_file: /project2/adukia/miie/visualizations/supplemental/data/SSA_names.csv
-spacy_ner_dataset: en_core_web_lg
-lower: True
-digits: True
-special_characters: True
-stopwords_add: ["s"] 
