@@ -1,7 +1,7 @@
 # Optical Character Recognition (OCR)
 
 ## Required Inputs:
-1. `raw_data_directory`: a directory containing images of text (cf. [test_scans](https://github.com/miielab/miienlp/tree/main/examples/test_data/test_scans)).
+1. `raw_data_directory`: a directory containing images of text. The images have to be jpg. files (cf. [test_scans](https://github.com/miielab/miienlp/tree/main/examples/test_data/test_scans)).
 2. The output path for `output_combined`, and `output_uncombined` parameters. 
 
 ## Example of a default input.yaml file
