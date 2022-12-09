@@ -9,6 +9,6 @@ After running those tests, this program can also clean and visualize the output 
 For more details, see:
 - [example](https://github.com/miielab/miienlp/blob/main/examples/weat_example.md) 
 - [setup instructions for UChicago MiiE Lab RA ONLY](https://github.com/miielab/miienlp/blob/main/documentation/miie_ra_documentation/weat.md)
-- [setup instructions for running OCR locally](https://github.com/miielab/miienlp/blob/main/documentation/user_documentation/weat.md)
+- [setup instructions for running WEAT locally](https://github.com/miielab/miienlp/blob/main/documentation/user_documentation/weat.md)
 
 
