@@ -53,17 +53,21 @@ special_characters: False
 ```
 
 ### Clean Counts input.yaml Example
+If you want to use the cleaning txt file to feed into TokenCounts package, you have to set your yaml file like this: 
+
 
 ```
 ---
-raw_data_directory: /project2/adukia/miie/text_analysis/data/gv_raw/
-output_directory: /project2/adukia/miie/text_analysis/data/gv_clean_counts/
+raw_data_directory: /path/to/input/folder 
+output_directory: /path/to/output/folder 
 digits: True
 lower: False
 ...
 ```
 
 ### Clean Vectors input.yaml Example
+If you want to use the cleaning txt file to feed into WordEmbedding package, you have to set your yaml file like this: 
+
 
 ```
 ---
@@ -75,28 +79,6 @@ special_characters: True
 ...
 ```
 
-### Race Gender Bundled Constructs input.yaml Example
-
-```
----
-raw_data_directory: /project2/adukia/miie/text_analysis/data/gv_raw/
-output_directory: /project2/adukia/miie/text_analysis/data/clean_bundled_constructs/
-digits: True
-lower: True
-special_characters: True
-categorize_domain:
-  directory: /project2/adukia/miie/text_analysis/supplemental_data/Categories
-  subcats: [business, education, entertainment, power, sports, struggle, wealth, tools, occupations]
-  case_sensitive: True
-categorize_famous:
-  directory: /project2/adukia/miie/text_analysis/supplemental_data/Categories/group
-  subcats: [white_male, black_male, white_female, black_female]
-  fuzzy: True
-  threshold_fuzzy: 0.9
-spacy_ner_dataset: en_core_web_lg
-gender_ssa_file: /project2/adukia/miie/visualizations/supplemental/data/SSA_names.csv
-...
-```
 
 ## How to Run
 
