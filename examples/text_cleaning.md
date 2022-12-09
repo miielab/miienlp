@@ -53,8 +53,8 @@ special_characters: False
 ```
 
 ### Clean Counts input.yaml Example
-If you want to use the cleaning txt file to feed into TokenCounts package, you have to set your yaml file like this: 
 
+If you want to feed the `cleaning.txt` file into the `TokenCounts` package, you have to set your yaml as follows: 
 
 ```
 ---
@@ -66,7 +66,7 @@ lower: False
 ```
 
 ### Clean Vectors input.yaml Example
-If you want to use the cleaning txt file to feed into WordEmbedding package, you have to set your yaml file like this: 
+If you want to feed the `cleaning.txt` file to feed into the `WordEmbedding` package, you have to set your yaml as follows: 
 
 
 ```
