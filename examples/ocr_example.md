@@ -28,8 +28,6 @@ preprocess_images: True
 For more details, refer to the [Custom and Default Options](https://github.com/miielab/miienlp/blob/main/documentation/developer_documentation/ocr.md) Section.
 
 
-```
-
 
 ## How to Run
 
