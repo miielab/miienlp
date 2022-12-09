@@ -1,7 +1,7 @@
 # Optical Character Recognition (OCR)
 
 ## What does it do?
-This platform will perform OCR on images, converting images containing text into text files. Specifically, it will perform [Google Vision OCR](https://cloud.google.com/vision/docs/ocr). Previous research has shown that Google Vision tends to outperform Tesseract's accuracy. However, Tesseract is a free, open-source software while Google Vision is not. Here is a summary of how to use this platform, and what customizations are available with both types of analyses.
+This platform will perform OCR on images, converting images containing text into text files. Specifically, it will perform [Google Vision OCR](https://cloud.google.com/vision/docs/ocr). 
 
 ## OCR Software Comparison Review
 
