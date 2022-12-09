@@ -31,7 +31,7 @@ For more details, refer to the [Custom and Default Options](https://github.com/m
 
 ## How to Run
 
-1. Edit and replace the `input.yaml` file in the [OCR folder](https://github.com/miielab/miienlp/tree/main/miienlp/ocr/input_yamls).
+1. Edit and replace the `input.yaml` file in the [OCR folder](https://github.com/miielab/miienlp/tree/main/miienlp/ocr/src/input_yamls).
 2. Run the pipeline:
     ```
     $ python src/main.py
