@@ -1,8 +1,8 @@
 # Optical Character Recognition (OCR)
 
 **Required Inputs:**
-1. raw_data_directory: A directory containing images of text (cf. [test_scans](https://github.com/miielab/miienlp/tree/main/examples/test_data/test_scans)).
-2. write the output path for output_combined, and output_uncombined parameters. 
+1. `raw_data_directory`: a directory containing images of text (cf. [test_scans](https://github.com/miielab/miienlp/tree/main/examples/test_data/test_scans)).
+2. The output path for `output_combined`, and `output_uncombined` parameters. 
 
 ## Example of a default input.yaml file
 
@@ -31,7 +31,7 @@ For more details, refer to the [Custom and Default Options](https://github.com/m
 
 ## How to Run
 
-1. Edit and replace the `input.yaml` file in the [OCR folder](https://github.com/miielab/miienlp/tree/main/miienlp/ocr/src/input_yamls).
+1. Edit and replace the `input.yaml` file in the [OCR folder](https://github.com/miielab/miienlp/tree/main/miienlp/ocr/src).
 2. Run the pipeline:
     ```
     $ python src/main.py
