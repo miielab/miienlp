@@ -3,7 +3,7 @@
 
 ## Description
 
-This code will perform various cleaning of text for multiple areas of research including (but not limited to): lexicon counts, contextual word vectors, sentiment analysis, and bundled constructs. A user can specify which cleaning they want to be performed on the raw text, with some example input files for specific cleaning provided. 
+Text cleaning is an important step beforing feeding texts into different NLP techniques. This platform will perform various cleaning of text for multiple areas of research including but not limited to: lexicon counts, contextual word vectors, sentiment analysis, and bundled constructs. The default setting will (1)remove excess new line characters and white spaces and (2) remove (non-ASCII) characters. You can also customize the setting to remove puncuations, digits, or convert all letters to lower cases, depending on what your needs and next steps. We provode some examples input files for specific cleaning needs to feed into different pipelines.
 
 
 **IMPORTANT** 
