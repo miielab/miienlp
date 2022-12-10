@@ -5,7 +5,7 @@
 | data_dir ***(required)*** | User filepath to cleaned text data directory |
 | method_name | Currently the only accepted NER method in our pipeline is spacy |
 | spacy_dataset | The NER pipeline used to run NER *(can be en_core_web_sm, en_core_web_lg or en_core_web_trf)*|
-| filter_entities | NER extracts entity from a text, which can be dates, times, people, etc. Specify the types of spacy entities you would like to extract specifically (i.e. [PERSON])  |
+| filter_entities | NER extracts entity from a text, which can be dates, times, people, etc. Specify the types of spacy entities you would like to extract specifically (e.g., [PERSON])  |
 | output_dir ***(required)*** | Where you would like your results stored |
 
 | Specific Word Counts Input | Description |
