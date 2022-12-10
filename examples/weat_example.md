@@ -2,15 +2,24 @@
 
 ## Example input.yaml file (customized)
 
+For example, we'd like to test the associations between Female/Male related words and Appearance related words. We first create a json file, illustrating the paths of the word list. An example of the json file can be found [here](https://github.com/miielab/miienlp/blob/7485cb43113055b22edb8f0669a0be181369279b/examples/test_data/json_weat/appearance.json_)  
+
+## Required Inputs: 
+1. specify run_analysis: "t" or "", "t" means you'd like to run the weat analysis. 
+2. add model_directory: the folder that cotains model.bin (the output we got from wordembedding)
+3. add output_directory and output_file (the output will be a json file) 
+4. add test_directory: 
+
+
 For a detailed description of the parameters, refer to [YAML file inputs](https://github.com/miielab/miienlp/blob/main/documentation/developer_documentation/autoYAML.md) section.
 ```
 ---
 run_analysis: "t"
 run_cleaning: ""
-model_directory: "path/to/model_directory"
-output_directory : "path/to/output_directory"
-output_file : "path/to/output_file.json"
-test_directory: "path/to/test_directory"
+model_directory: "miienlp/examples/test_data/" # this folder contain model.bin (the ouput we got from wordEmbedding)
+output_directory : "path/to/output_directory"  # specify your output directory 
+output_file : "path/to/output_file.json".     # create your output json file 
+test_directory: "miienlp/examples/test_data/json_weat" # you can see that in this repo, we have a /appearance.json file in miienlp/examples/test_data/json_weat folder 
 vocabulary_suffix: "npy"
 embeddings_suffix: "txt"
 reuse_fetchvec: "t"
@@ -19,7 +28,7 @@ clean_out: "file_name.csv"
 ```
 
 
-For running the same WEAT analysis test on a different book collection and saving the output to the same JSON file, change `model_directory` to the folder containing that other book collection (the model_directory can be changed as often as needed - if nothing else is changed, WEAT will run the same test and save the results to the same JSON output file). To run a completely new WEAT analysis test, make sure to delete the TEMP file that was generated in the output directory.
+For running the same WEAT analysis test on a different folder and saving the output to the same JSON file, change `model_directory` to the folder containing that other files (the model_directory can be changed as often as needed - if nothing else is changed, WEAT will run the same test and save the results to the same JSON output file). To run a completely new WEAT analysis test, make sure to delete the TEMP file that was generated in the output directory.
 
 
 ## [clean.csv](https://github.com/miielab/miienlp/blob/main/examples/test_data/clean.csv) file input explanation
