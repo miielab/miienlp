@@ -22,7 +22,7 @@
 The suggested image type is JPEG, but this platform supports [eleven image types](https://docs.opencv.org/3.4/d4/da8/group__imgcodecs.html#ga288b8b3da0892bd651fce07b3bbd3a56).
 
 
-If your input folder is "data", and structured as follows:
+If your input folder is `data`, and structured as follows:
 
 ```
 data
