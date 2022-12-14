@@ -23,8 +23,8 @@ test_directory: "miienlp/examples/test_data/json_weat" # you can see that in thi
 vocabulary_suffix: "npy"
 embeddings_suffix: "txt"
 reuse_fetchvec: "t"
-clean_csv: "test_data/clean.csv"
-clean_out: "file_name.csv"
+clean_csv: ""  # leave this empty 
+clean_out: ""  # leave this empty 
 ```
 
 
