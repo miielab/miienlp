@@ -29,7 +29,7 @@ text: /path/to/text
 domains: /path/to/domain_directory
 groups: /path/to/group_directory
 subcats: [male, female, family, appearance, business]
-method: context
+method: sentence
 window: 3
 scaled: False
 output: /path/to/output_csv
