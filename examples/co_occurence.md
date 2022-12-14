@@ -14,8 +14,7 @@ groups: test_data/test_group
 
 Some possible [groups](https://github.com/miielab/Categories/tree/main/group) and [domains](https://github.com/miielab/Categories/tree/main/domain) for users without pre-determined categories. 
 
-#### (IMPORTANT) MiiE Lab RA only
-These lexicons are also located on Midway at 
+#### (IMPORTANT - MiiE Lab RA only) These files can also be found on Midway at 
 
 `/project2/adukia/miie/text_analysis/supplemental_data/Categories/group/` and 
 `/project2/adukia/miie/text_analysis/supplemental_data/Categories/domain/`
