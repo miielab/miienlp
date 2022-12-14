@@ -6,7 +6,7 @@ The pipeline at the heart of MiiENLP:
 
 ## Table of Contents
 
-1. [Data Aggregation](https://github.com/miielab/miienlp/tree/main/miienlp/aggregation)
+1. (Optional) [Data Aggregation](https://github.com/miielab/miienlp/tree/main/miienlp/aggregation)
 2. [Optical Character Recognition](https://github.com/miielab/miienlp/tree/main/miienlp/ocr)
 3. [Automatic YAML File Creation](https://github.com/miielab/miienlp/tree/main/miienlp/auto_yaml)
 4. [Text Cleaning](https://github.com/miielab/miienlp/tree/main/miienlp/text_cleaning)
