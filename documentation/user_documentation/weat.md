@@ -25,14 +25,14 @@ where *'test'* should contain one or two lists for T1 or T2 respectively and *'g
 
 To run the code:
   ```
-  1. conda create -n weat
-  2. conda activate weat
-  3. conda install numpy
-  4. conda install -c anaconda scikit-learn
-  5. conda install scipy
-  6. conda install statsmodels
-  7. conda install pyyaml
-  8. conda install gensim
+  conda create -n weat
+  conda activate weat
+  conda install numpy
+  conda install -c anaconda scikit-learn
+  conda install scipy
+  conda install statsmodels
+  conda install pyyaml
+  conda install gensim
   
   "python main.py"
   ```
