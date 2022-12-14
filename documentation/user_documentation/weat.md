@@ -1,4 +1,4 @@
-# WEAT Analysis and/or Cleaning
+# WEAT Analysis
 
 ## What is required to run WEAT analysis?
 
