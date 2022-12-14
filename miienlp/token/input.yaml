@@ -1,0 +1,10 @@
+---
+data_dir: miienlp/examples/test_data/clean_text
+
+ner:
+  method_name: spacy
+  spacy_dataset: en_core_web_lg
+  filter_entities: [PERSON]
+  output_dir: /ner
+...
+
