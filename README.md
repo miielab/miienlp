@@ -14,3 +14,5 @@ The pipeline at the heart of MiiENLP:
 6. [Co-occurence](https://github.com/miielab/miienlp/tree/main/miienlp/co_occurrence)
 7. [Word Embeddings](https://github.com/miielab/miienlp/tree/main/miienlp/embeddings) 
 8. [Word Embedding Association Test](https://github.com/miielab/miienlp/tree/main/miienlp/weat)
+
+**Note:** the code was tested on Python ver. 3.7.
