@@ -28,7 +28,7 @@ Custom flag and default options are further detailed [here](https://github.com/m
 text: /path/to/text
 domains: /path/to/domain_directory
 groups: /path/to/group_directory
-subcats: [male, female, family, appearance, business]
+subcats: [male, female, family, appearance, business]. # those are the names of your domain txt files, and groups txt files. Please see the example yaml file for more information 
 method: sentence
 window: 3
 scaled: False
