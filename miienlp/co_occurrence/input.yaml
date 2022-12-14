@@ -1,10 +1,10 @@
 ---
 # Co-Occurrence inputs
-text: /home/adas7/Co-occurrence/test_suite/text.txt
-domains: /project2/adukia/miie/text_analysis/supplemental_data/Categories/domain
-groups: /project2/adukia/miie/text_analysis/supplemental_data/Categories/group
-subcats: ["male_words", "female_words", "family", "appearance", "business"]
-output: /home/adas7/Co-occurrence/src/outputs/test.csv
+text: miienlp/examples/test_data/example_co-occurence.txt
+domains: miienlp/examples/test_data/test_domain
+groups: miienlp/examples/test_data/test_group
+subcats: ["example_group-male", "example_group-female", "example_domain_appearance"] # the names of your domain.txt file and group.txt files 
+output: miienlp/examples/test_data/co_occur_result.csv   # specify the csv output here 
 method: sentence 
 window: 3 # if context window is being used
 scaled: False #group, domain, False
