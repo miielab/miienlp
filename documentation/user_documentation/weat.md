@@ -19,64 +19,26 @@ where *'test'* should contain one or two lists for T1 or T2 respectively and *'g
 
 `4. input.yaml` 
 
-## What is required to run WEAT cleaning?
-`CSV input file` (See the [example](https://github.com/miielab/miienlp/blob/main/examples/weat_example.md)).
 
 
-## How to run WEAT analysis and/or cleaning:
+## How to run WEAT analysis 
 
-To run the code directly:
-  ```
-  "python main.py"
-  ```
-  
-To run the code on a slurm system (MiiE Lab RA ONLY):
-  ```	
-  sbatch runbrwl.batch
-  ```
-  
-If you are on Midway (MiiE Lab RA ONLY):
-  ```
-  1. module load Anaconda3/5.3.0
-  2. conda create -n weat
-  3. source activate weat
-  ```	
-  
-If you are on your own computer:
+To run the code:
   ```
   1. conda create -n weat
   2. conda activate weat
-  ```
+  3. conda install numpy
+  4. conda install -c anaconda scikit-learn
+  5. conda install scipy
+  6. conda install statsmodels
+  7. conda install pyyaml
+  8. conda install gensim
   
-Then:
+  "python main.py"
   ```
-  1. conda install numpy
-  2. conda install -c anaconda scikit-learn
-  3. conda install scipy
-  4. conda install statsmodels
-  5. conda install pyyaml
-  6. conda install gensim
-  7. python main.py
-  ```
+ 	
+  
 
 **After finalizing the WEAT analysis, delete the TEMP folder that was generated.**
 
-## How to Run WEAT visualizations
 
-Midway modules:
-  ```
-  module load R
-  ```  
-
-Run:
-  ```
-  Rscript line_graphs_viz.R
-  Rscript bar_graphs_viz.R
-  ```	
-
-## Dependencies
-- [numpy](https://numpy.org/)
-- [sklearn](https://scikit-learn.org/)
-- [scipy](https://www.scipy.org)
-
-**IMPORTANT:** For more details regarding the modules, see the [details](https://github.com/miielab/miienlp/blob/main/documentation/developer_documentation/weat.md) section.
