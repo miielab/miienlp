@@ -31,7 +31,7 @@ specific_words:
   output_dir: ENTER_YOUR_OUTPUT_DIR_PATH #where you would like your results stored
 ...
 ```
-**Note:** the [Categories](https://github.com/miielab/Categories) GitHub repository contains all potential specific words we are interested in (for our analysis in particular). One may create new categories, or rely on the already existing categories. 
+**Note:** we provide three example files ([domain](https://github.com/miielab/miienlp/blob/main/examples/test_data/test_domain/example_domain_appearance.txt) and [group](https://github.com/miielab/miienlp/tree/main/examples/test_data/test_group)) which contain specific words we are interested in (for our analysis in particular). One may create new categories, depending on the analysis that needs to be performed. 
 
 
 
