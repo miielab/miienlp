@@ -19,3 +19,7 @@ If you are completely new to Python, here are some resources to get you started:
     ```
     conda activate /Users/xxx/location/of/your/environment
     ```
+ 
+You are all set! 
+
+We will be running all the codes in this environment. 
