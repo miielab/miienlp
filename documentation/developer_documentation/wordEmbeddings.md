@@ -10,7 +10,7 @@ There are different "sections" of parameters for this pipeline, only one which i
 For more information on this section, see the documentation for [word2vec](https://radimrehurek.com/gensim/models/word2vec.html) or BERT.
 | Input | Description |
 | --- | --- |
-| name | The type of model you would like to run. Options: word2vec or bert). Default is word2vec. |
+| name | Default is word2vec. |
 | size | Dimensionality of the word vectors. Default is 300. |
 | window | Maximum distance between the current and predicted word within a sentence. Default is 5. |
 | min_count | The minimum frequency a word must appear in a text in order to be included in the model. Default is 10. |
