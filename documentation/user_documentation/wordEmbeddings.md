@@ -2,6 +2,9 @@
 
 ## How to Run
 
+Required inputs: A cleaned txt file. Please use our [TextCleaning (word embedding option)](https://github.com/miielab/miienlp/blob/main/examples/text_cleaning.md) to properly clean the txt file and use that as input. 
+
+
 1. Fork or clone the `WordEmbeddings` repository.
 2. (Optional) Create a virtual (or conda) environment and activate that environment (this will ensure that any packages you already have downloaded on your personal computer do not conflict with the packages you will be installing for this analysis).
 3. Load in Python (`module load python`) and download the dependencies:
