@@ -7,7 +7,7 @@ If you are completely new to Python, here are some resources to get you started:
    - We recommend the users to download and install [Anaconda Python distribution](http://www.anaconda.com/products/distribution). 
    
 2. Create a new environment 
-   - After installing Anaconda, we will create a new python environment inside Anaconda. Please follow the instructions here to create a Python 3.7.x environment. 
+   - After installing Anaconda, we will create a new python environment inside Anaconda. Please follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) to create a Python 3.7.x environment. 
    - Then open your terminal, and type :
    
     ```
