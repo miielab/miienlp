@@ -2,7 +2,7 @@
 
 ## Example input.yaml file (customized)
 
-For example, we'd like to test the associations between Female/Male related words and Appearance related words. We first create a json file, illustrating the paths of the word list. An example of the json file can be found [here](https://github.com/miielab/miienlp/blob/7485cb43113055b22edb8f0669a0be181369279b/examples/test_data/json_weat/appearance.json_)  
+For example, we'd like to test the associations between Female/Male related words and Appearance related words. We first create a json file, illustrating the paths of the word list. An example of the json file can be found [here](https://github.com/miielab/miienlp/blob/main/examples/test_data/json_weat/appearance.json)  
 
 ## Required Inputs: 
 1. specify run_analysis: "t" or "", "t" means you'd like to run the weat analysis. 
