@@ -12,23 +12,10 @@ If you would like to know more about what each method does, please click the lin
 
 ## Getting Started
 
-If you are familiar with Python, please skip this part and go to Table of Contents section. It is worth noting that you should create a new environment in Python Version 3.7. to avoid any package compatibility issues.
+If you are familiar with Python, please skip this part and go to Table of Contents section. It is worth noting that you should create a new environment in Python Version 3.7. to avoid any package compatibility issues. You may get an error if you are using a different version of Python. 
 
-If you are completely new to Python, here are some resources to get you started:
+If you are completely new to Python, here are some [resources](https://github.com/miielab/miienlp/blob/afa9ff87adc58c1d447f538ab4d91b791b27662c/examples/python_installation.md) to get you started. We include instructions on how to install python and create a new environment in Python ver.3.7. using command line. 
 
-1. Download python 
-   - We recommend the users to download and install [Anaconda Python distribution](http://www.anaconda.com/products/distribution). 
-   
-2. Create a new environment 
-   - After installing Anaconda, we will create a new python environment inside Anaconda. Please follow the instructions here to create a Python 3.7.x environment. 
-   - Then open your terminal, and type :
-    ```
-    conda info --envs 
-    ```
-    to find the new environment you just create. You will get a list of envrionment names and their locations. Copy the location of that environment and type 
-    ```
-    conda activate /Users/xxx/locations/of/your/environment
-    ```
 
 ## Table of Contents
 
