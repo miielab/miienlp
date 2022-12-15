@@ -12,7 +12,7 @@ groups: test_data/test_group
 ...
 ```
 
-Some possible [groups](https://github.com/miielab/Categories/tree/main/group) and [domains](https://github.com/miielab/Categories/tree/main/domain) for users without pre-determined categories. 
+**Note:** we provide three example files ([domain](https://github.com/miielab/miienlp/blob/main/examples/test_data/test_domain/example_domain_appearance.txt) and [group](https://github.com/miielab/miienlp/tree/main/examples/test_data/test_group)) which contain specific words we are interested in (for our analysis in particular). One may create new categories, depending on the analysis that needs to be performed. 
 
 #### (IMPORTANT - MiiE Lab RA only) These files can also be found on Midway at: 
 
