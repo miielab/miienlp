@@ -28,4 +28,4 @@
   ```
 **IMPORTANT:** See [custom parameters](https://github.com/miielab/miienlp/blob/main/documentation/developer_documentation/tokenCounts.md) for more options.
 
-**Note:** We have compiled a list of domain and group related words for users to use: the [Categories](https://github.com/miielab/Categories) GitHub repository contains all potential specific words we are interested in (for our analysis in particular). One may create new categories, or rely on the already existing categories. 
+**Note:** We have compiled a list of domain and group related words for users to use: the [Categories GitHub repository](https://github.com/miielab/Categories) contains all potential specific words we are interested in (for our analysis in particular). One may create new categories, or rely on the already existing categories. 
