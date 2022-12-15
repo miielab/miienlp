@@ -12,6 +12,8 @@
 4. Edit and save `ocr/src/input.yaml` file.
 5. To use our OCR method, you have to apply for [Google Vision API credentials](https://cloud.google.com/vision/docs/setup) and download the Google application credentials. You will get $300 in free credits to run, test, and deploy workloads if you are a new user of Google Cloud. (Note: we recommend [this video](https://www.youtube.com/watch?v=wfyDiLMGqDM&list=PL3JVwFmb_BnSLFyVThMfEavAEZYHBpWEd&index=2) in addition to the aforementioned Google instructions.)
 
+   While using Google Vision API, the charges are incurred per image. The first 1000 instances used each month are free, following this limit, charges apply (see the [pricing](https://cloud.google.com/vision/pricing) for more details).
+
    A cost-free alternative technology, is [Tesseract](https://github.com/tesseract-ocr/tesseract). While Tesseract's performance does not match that of Google Vision's, it is close.
 
 6. After obtaining your Google API credentials (e.g., MiiE Lab has TextAnalysis--8fc4fa534750.json), put them into your ocr/src folder, and type the following in the terminal: 
