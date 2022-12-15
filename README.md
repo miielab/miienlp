@@ -27,8 +27,4 @@ If you are completely new to Python, here are some [resources](https://github.co
 6. [Word Embeddings](https://github.com/miielab/miienlp/tree/main/miienlp/embeddings) 
 7. [Word Embedding Association Test (WEAT)](https://github.com/miielab/miienlp/tree/main/miienlp/weat)
 
-**Note:** The code was tested on Python ver. 3.7. We recommend the users to create a new environment in Python ver. 3.7. to use our packages. 
-
-
-
 [Contact us](https://www.miielab.com/contact)
