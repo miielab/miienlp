@@ -2,7 +2,8 @@
 
 The pipeline at the heart of MiiENLP:
 
-<img width="1249" alt="miieNLP_pipeline" src="https://user-images.githubusercontent.com/61833458/207733902-07d593fb-c42e-464f-8bb3-1576de48e5d4.png">
+![miienlp-pipeline](https://user-images.githubusercontent.com/30983820/207747948-1eb968d8-e46b-4512-8640-308487bf3c01.png)
+
 
 ## Table of Contents
 
