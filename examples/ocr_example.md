@@ -49,5 +49,5 @@ For more details, refer to the [Custom and Default Options](https://github.com/m
 
 ## Output 
 
-In the output path folder specified, there will be a new `combined.txt` file, and uncombined folder, containing the text in the images. 
+If you are running OCR on one folder of images, you will get a new `combined.txt` file, and uncombined folder, containing the text in the images. If you are running OCR on multiple folder of images within the same directory, you will get multiple 'combined.txt' files. To aggregate multiple txt files into one txt file, please check out the [Data Aggregation folder](https://github.com/miielab/miienlp/tree/main/miienlp/aggregation).
 
