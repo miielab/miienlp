@@ -8,7 +8,27 @@ The MiiENLP open source package is a one stop shop for social scientists to use 
 ![miienlp-pipeline](https://user-images.githubusercontent.com/30983820/207747948-1eb968d8-e46b-4512-8640-308487bf3c01.png)
 
 
-If you would like to know more about what each method does, please click the link below or check out the example folders. 
+If you would like to know more about what each method does, please click the link in Table of Contents section or check out the example folders. 
+
+## Getting Started
+
+If you are familiar with Python, please skip this part and go to Table of Contents section. It is worth noting that you should create a new environment in Python Version 3.7. to avoid any package compatibility issues.
+
+If you are completely new to Python, here are some resources to get you started:
+
+1. Download python 
+   - We recommend the users to download and install [Anaconda Python distribution](http://www.anaconda.com/products/distribution). 
+   
+2. Create a new environment 
+   - After installing Anaconda, we will create a new python environment inside Anaconda. Please follow the instructions here to create a Python 3.7.x environment. 
+   - Then open your terminal, and type :
+    ```
+    conda info --envs 
+    ```
+    to find the new environment you just create. You will get a list of envrionment names and their locations. Copy the location of that environment and type 
+    ```
+    conda activate /Users/xxx/locations/of/your/environment
+    ```
 
 ## Table of Contents
 
@@ -22,12 +42,6 @@ If you would like to know more about what each method does, please click the lin
 
 **Note:** The code was tested on Python ver. 3.7. We recommend the users to create a new environment in Python ver. 3.7. to use our packages. 
 
-## Getting Started 
-
-If you are completely new to Python, here are some resources to get you started:
-
-##### Download Python 
-##### Create a new e
 
 
 [Contact us](https://www.miielab.com/contact)
