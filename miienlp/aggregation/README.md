@@ -6,7 +6,7 @@ If you are running TextCleaning on a folder of files, you may get several txt.fi
 
 1) combined_file_path.py will generate a metadata CSV file to feed into the data aggregation pipeline. For example, you have a folder of txt files, and you want to aggregate them into one txt file. The first step is to create a metadata CSV file. 
 
-2) Then you run $python main.py -i input.yaml 
+2) Then you run ```$python main.py -i input.yaml``` 
 
 This script combines data in customizable ways based on a metadata CSV file provided by the user. 
 
