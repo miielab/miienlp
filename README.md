@@ -1,4 +1,4 @@
-# MiiENLP Source Code (v. 1.0.0)
+# MiiENLP Source Code (v 1.0.0)
 
 The pipeline at the heart of MiiENLP:
 
