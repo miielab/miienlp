@@ -7,7 +7,7 @@ There are different "sections" of parameters for this pipeline, only one which i
 **Note:** the `data_dir` input can be a list of txt files, list of directories, or a single directory or file.
 
 ### model
-For more information on this section, see the documentation for [word2vec](https://radimrehurek.com/gensim/models/word2vec.html) or BERT.
+For more information on this section, see the documentation for [word2vec](https://radimrehurek.com/gensim/models/word2vec.html).
 | Input | Description |
 | --- | --- |
 | name | Default is word2vec. |
