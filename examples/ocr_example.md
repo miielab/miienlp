@@ -49,5 +49,5 @@ For more details, refer to the [Custom and Default Options](https://github.com/m
 
 ## Output 
 
-In the output path folder specified, there will be a new `combind.txt` file, and uncombined folder, containing the text in the images. 
+In the output path folder specified, there will be a new `combined.txt` file, and uncombined folder, containing the text in the images. 
 
