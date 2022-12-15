@@ -2,9 +2,7 @@
 
 Welcome! 
 
-Early influences that depress children’s beliefs about their own ability can lead to lower educational achievement and persistent disadvantage. In particular, receiving negative messages about gender- and race-specific levels of ability have played a role in generating disadvantage for women and minorities. Children are particularly vulnerable to negative messages about race and gender, as their beliefs about their own capacities are highly malleable.
-
-This project aims to improve how we estimate the extent and implications of children’s exposure to race- and gender-coded messages. The MiiENLP open source package is a one stop shop for social scientists to use simple NLP techniques to analyze texts and derive meaningful results. The repository contains the source code and examples for using the packages described in the pipeline below: 
+The MiiENLP open source package is a one stop shop for social scientists to use simple NLP techniques to analyze texts and derive meaningful results. The repository contains the source code and examples for using the packages described in the pipeline below: 
 
 
 ![miienlp-pipeline](https://user-images.githubusercontent.com/30983820/207747948-1eb968d8-e46b-4512-8640-308487bf3c01.png)
