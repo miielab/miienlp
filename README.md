@@ -7,6 +7,7 @@ The MiiENLP open source package is a one stop shop for social scientists to use 
 
 ![miienlp-pipeline](https://user-images.githubusercontent.com/30983820/207747948-1eb968d8-e46b-4512-8640-308487bf3c01.png)
 
+
 If you would like to know more about what each method does, please click the link below or check out the example folders. 
 
 ## Table of Contents
@@ -21,8 +22,12 @@ If you would like to know more about what each method does, please click the lin
 
 **Note:** The code was tested on Python ver. 3.7. We recommend the users to create a new environment in Python ver. 3.7. to use our packages. 
 
+## Getting Started 
 
-If you are completely new to Python, here are some resources to get you started! 
-⭐ Getting Started! 
+If you are completely new to Python, here are some resources to get you started:
+
+##### Download Python 
+##### Create a new e
+
 
 [Contact us](https://www.miielab.com/contact)
