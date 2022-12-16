@@ -34,4 +34,4 @@ output:
 ## Output 
 The output will be a ```model.bin``` file, containing words and their vectors. The ```model.bin``` file will be the input for WEAT (bias detection test). 
 
-If you would like to convert ```model.bin``` file into a csv file as the output, please run the code ```convert_bin_csv.py``` in this folder. 
+If you would like to convert ```model.bin``` file into a csv file as the output, please run the code ```convert_bin_csv.py``` in the main folder. 
