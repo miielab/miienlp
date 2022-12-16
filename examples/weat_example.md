@@ -57,5 +57,6 @@ The output will be stored as a json file. It may look like this:
 
 Since we calculate the cosin-similarity betweens male/female words and apperance-related words, the results here mean that appearance words are more associated with female than male. The range for association is from 0 to 1. 0 means that are not related. 
 
+If you would like to convert json file to a csv file, please refer to [this instruction](https://www.geeksforgeeks.org/convert-json-to-csv-in-python/). 
 
 
