@@ -17,6 +17,32 @@ raw_data_directory: /path/to/raw_data_dir # only required input
 ...
 ```
 
+### Clean Counts input.yaml Example
+
+If you want to feed the `cleaning.txt` file into the `TokenCounts` package, you have to set your yaml as follows: 
+
+```
+---
+raw_data_directory: /path/to/input/folder 
+output_directory: /path/to/output/folder 
+digits: True
+lower: False
+...
+```
+
+### Clean Vectors input.yaml Example
+If you want to feed the `cleaning.txt` file to feed into the `WordEmbedding` package, you have to set your yaml as follows: 
+
+
+```
+---
+raw_data_directory: /project2/adukia/miie/text_analysis/data/gv_raw/
+output_directory: /project2/adukia/miie/text_analysis/data/gv_clean_vec/
+digits: True
+lower: True
+special_characters: True
+...
+```
 
 ### Example of a customized pipeline
 
@@ -47,32 +73,6 @@ special_characters: False
 ...
 ```
 
-### Clean Counts input.yaml Example
-
-If you want to feed the `cleaning.txt` file into the `TokenCounts` package, you have to set your yaml as follows: 
-
-```
----
-raw_data_directory: /path/to/input/folder 
-output_directory: /path/to/output/folder 
-digits: True
-lower: False
-...
-```
-
-### Clean Vectors input.yaml Example
-If you want to feed the `cleaning.txt` file to feed into the `WordEmbedding` package, you have to set your yaml as follows: 
-
-
-```
----
-raw_data_directory: /project2/adukia/miie/text_analysis/data/gv_raw/
-output_directory: /project2/adukia/miie/text_analysis/data/gv_clean_vec/
-digits: True
-lower: True
-special_characters: True
-...
-```
 
 
 ## How to Run
