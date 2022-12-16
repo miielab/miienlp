@@ -17,7 +17,7 @@ model:
   name: word2vec
   size: 300
   window: 7
-  min_count: 50 # number of models you want to generate 
+  min_count: 1 # number of models you want to generate 
   workers: 5
   sg: 1
   hs: 1
@@ -30,4 +30,4 @@ output:
   save_vocab_txt: True
 ...
 ``` 
-
+The output will be a model.bin file, containing words and their vectors. 
