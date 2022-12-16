@@ -1,17 +1,12 @@
 # Text Cleaning
 
-The only required input is the `raw_data_directory` (i.e., the folder containing the text data).
+The only required input is the `raw_data_directory` (i.e., the folder containing the text data) if you want to use the default option described below. If you want to clean the text for the purpose of using TokenCounts or WordEmbeddings, please refer to the specific yaml files below. 
 
-## A few notes
 1. When only the raw text data directory is provided, the only cleaning performed will be: 
     - removing excess new line characters and white spaces 
     - removing non-ASCII characters
     
 2. When removing special characters, we do not remove the character `_`. This is because when using n-grams or some categorizations, we do not want to split up words.
-
-3. For case-sensitive domain categorizations, all words in a given list must be lowercase unless the word should only be categorized if uppercased. 
-
-4. In order to perform domain categorizations, removing special characters is *highly recommended*.
 
 
 ### Example of a default input.yaml file
