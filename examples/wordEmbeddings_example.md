@@ -6,12 +6,12 @@
 Required inputs: A cleaned txt file. Please use our [TextCleaning (word embedding option)](https://github.com/miielab/miienlp/blob/main/examples/text_cleaning.md) to properly clean the txt file and use that as input. 
 
 
-Below is an example of an input.yaml file that takes advantage of all possible customizations of the pipeline (described in the [word embeddings setup](https://github.com/miielab/miienlp/blob/main/documentation/user_documentation/wordEmbeddings.md) instructions) for a [book excerpt](https://github.com/miielab/miienlp/blob/main/examples/test_data/example_book_excerpt.txt) for which the path was specified in `data_dir`.
+Below is an example of an input.yaml file that takes advantage of all possible customizations of the pipeline (described in the [word embeddings setup](https://github.com/miielab/miienlp/blob/main/documentation/user_documentation/wordEmbeddings.md) instructions) for a [book excerpt](https://github.com/miielab/miienlp/blob/6392fe1d3c8153f8fa9dc7632a6b613a03a32007/examples/test_data/clean_text/example_clean_book_excerpt.txt) for which the path was specified in `data_dir`.
 
 ```
 ---
 # word embeddings inputs
-data_dir: [test_data/example_book_excerpt.txt]
+data_dir: [/examples/test_data/clean_text/example_clean_book_excerpt.txt]
 
 model:
   name: word2vec
