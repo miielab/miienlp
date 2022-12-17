@@ -63,3 +63,7 @@ specific_words:
     ```
     $ python main.py -i /path/to/input/yaml
     ```
+    
+### Output 
+
+A CSV file for NER and specific words for each txt file will be generated respectivly. 
