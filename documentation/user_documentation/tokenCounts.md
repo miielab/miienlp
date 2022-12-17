@@ -12,7 +12,7 @@
 
 4. Run the pipeline:
   ```
-  $ python src/main.py -i /path/to/input/yaml
+  $ python main.py -i /path/to/input/yaml
   ```
 **IMPORTANT:** See [custom parameters](https://github.com/miielab/miienlp/blob/main/documentation/developer_documentation/tokenCounts.md) for more options.
 
