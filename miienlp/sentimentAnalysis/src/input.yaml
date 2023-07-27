@@ -1,0 +1,7 @@
+---
+data_dir: ../../../../SentimentAnalysis/src/bert/code_folder/miie_sentiment_analysis/data
+category_dir: ../category/
+output_dir: ../output/
+case_sensitive: True
+fuzzy: True
+threshold_fuzzy: 0.9
