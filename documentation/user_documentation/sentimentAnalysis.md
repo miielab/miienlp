@@ -21,5 +21,5 @@
 
 6. Navigate to the `src` folder (`cd src`) and run the pipeline:
     ```
-    $ python src/main.py
+    $ python src/main.py -i /path/to/input/yaml
     ```
