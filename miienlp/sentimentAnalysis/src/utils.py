@@ -2,6 +2,7 @@ import yaml, os, torch, pickle
 import pandas as pd
 from transformers import AutoModel, AutoTokenizer
 from bert_classifier import BertClassifier
+from huggingface_hub import snapshot_download
 
 _curdir = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_PARAMS_FILE = os.path.join(_curdir, 'input.yaml') # looks for input.yaml file in src/ directory
@@ -58,11 +59,17 @@ def connect_GPU():
 ### Loads the best-performing bert-base-uncased model ###
 def load_model(device):
     # load a model
+    
+    if (len(os.listdir("../model/")) == 1):
+        if (os.listdir("../model/")[0] == ".DS_Store"):
+            snapshot_download(repo_id="rajayush143/bert-childrens-books", cache_dir="../model")
+            os.rename("../model/" + os.listdir("../model/")[1], "../model/model_files/")
+
     model = BertClassifier()
-    model.load_state_dict(torch.load('../model/model_save_testing.pt', map_location=device))
+    model.load_state_dict(torch.load('../model/model_files/model_save_testing.pt', map_location=device))
     
     # load a tokenizer
-    tokenizer = AutoTokenizer.from_pretrained('../model/bert-base-uncased')
+    tokenizer = AutoTokenizer.from_pretrained('../model/model_files/bert-base-uncased')
 
     return model, tokenizer
 

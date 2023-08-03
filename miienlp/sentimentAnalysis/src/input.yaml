@@ -1,5 +1,5 @@
 ---
-data_dir: ../../../../SentimentAnalysis/src/bert/code_folder/miie_sentiment_analysis/data
+data_dir: ../data/
 category_dir: ../category/
 output_dir: ../output/
 case_sensitive: True

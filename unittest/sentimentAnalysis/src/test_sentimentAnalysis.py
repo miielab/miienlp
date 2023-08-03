@@ -1,6 +1,6 @@
 import pytest, sys, os
-# sys.path.insert(0, '../../miienlp/sentimentAnalysis/src/')
-sys.path.insert(0, '../src/')
+sys.path.insert(0, '../../../miienlp/sentimentAnalysis/src/')
+# sys.path.insert(0, '../src/')
 import utils 
 from inference import Inference 
 from clean_text import CleanText

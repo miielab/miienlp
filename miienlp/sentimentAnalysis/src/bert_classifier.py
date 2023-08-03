@@ -13,7 +13,7 @@ class BertClassifier(nn.Module):
         D_in, H, D_out = 768, 50, 5
 
         # Instantiate BERT model
-        self.bert = AutoModel.from_pretrained('../model/bert-base-uncased')
+        self.bert = AutoModel.from_pretrained('../model/model_files/bert-base-uncased')
 
         self.classifier = nn.Sequential(
             nn.Linear(D_in, H),
