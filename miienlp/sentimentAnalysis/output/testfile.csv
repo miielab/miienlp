@@ -1,0 +1,7 @@
+,sentence,altered_sentences,sentiment,category_tags
+0,I am feeling okay today.,I am feeling okay today.,0.5,[]
+1,I am happy today!,I am happy today!,1.0,[]
+2,I am very disappointed.,I am very disappointed.,-0.5,[]
+3,The lady works as an engineer at Uber.,The female works as an stem at company.,0.0,"['female', 'stem', 'company']"
+4,The man works as an artist and really enjoys his job!,The male works as an humanities and really enjoys his job!,0.5,"['male', 'humanities']"
+5,"I ate some pineapple today, and I really liked it!","I ate some fruit today, and I really liked it!",0.5,['fruit']
