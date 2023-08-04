@@ -1,0 +1,7 @@
+---
+data_dir: ../data/
+category_dir: ../category/
+output_dir: ../output/
+case_sensitive: True
+fuzzy: True
+threshold_fuzzy: 0.9
