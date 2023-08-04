@@ -42,6 +42,9 @@ def main():
                 output_file = params['output_dir'] + '/' + filename + '.csv' # creating output file path (based on the name of the given file)
                 inf = Inference(data, output_file, model, device, tokenizer, ct)
                 inf.create_output()
+    
+    print("Sentiment Analysis is complete.")
+    print("The output is located in " + os.path.abspath(params['output_dir']) + ".")
 
 if __name__ == '__main__':
     main()
