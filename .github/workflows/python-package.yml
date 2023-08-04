@@ -55,6 +55,11 @@ jobs:
       run: |
         cd unittest/WEAT/
         pytest -k test_WEAT.py
+
+    - name: Test Sentiment Analysis
+      run: |
+        cd unittest/sentimentAnalysis/src/
+        pytest -k test_sentimentAnalysis.py
         
 
 
