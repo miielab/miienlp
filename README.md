@@ -5,7 +5,7 @@ Welcome!
 The MiiENLP open source package is a one stop shop for social scientists to use Natural Language Processing (NLP) techniques to analyze texts and derive meaningful results. We created this package with the aim of making NLP and machine-implemented content analysis techniques more accessible to the general users who have zero or limited proficiency in python. We hope these tools will help our you catalyze new research in fields such as social sciences and computational social sciences. The repository contains the source code and examples for using the packages described in the pipeline below: 
 
 
-![miienlp-pipeline](miienlp -pipeline.png)
+![miienlp-pipeline](miienlp-pipeline.png)
 
 
 If you would like to know more about what each method does, please click the link in Table of Contents section or check out the example folders. 
